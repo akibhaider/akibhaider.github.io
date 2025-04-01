@@ -1,0 +1,369 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 20px 0;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #f0f0f0;
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #333;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  padding: 30px;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.profile-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.profile-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info {
+  margin-top: 15px;
+}
+
+.email-box {
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.email-label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.email-address {
+  font-size: 0.9rem;
+}
+
+.profile-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.research-diagram {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.underline {
+  width: 40px;
+  height: 4px;
+  background-color: #333;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.about-section p {
+  margin-bottom: 15px;
+}
+
+.emoji {
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+}
+
+/* Resume Section */
+.experience-box,
+.education-box {
+  margin-bottom: 30px;
+}
+
+.experience-box h3,
+.education-box h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 0;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -34px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0066cc;
+}
+
+.timeline-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.timeline-content p {
+  margin-bottom: 5px;
+}
+
+.timeline-content .date {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.timeline-content ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Projects Section */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #0055aa;
+  text-decoration: none;
+}
+
+/* Achievements Section */
+.achievement-list {
+  list-style: none;
+}
+
+.achievement-list li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.achievement-date {
+  min-width: 60px;
+  font-weight: bold;
+  color: #0066cc;
+}
+
+/* Leadership Section */
+.leadership-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.leadership-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.leadership-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.leadership-org {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.leadership-date {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  color: #0066cc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile-left,
+  .profile-right {
+    width: 100%;
+  }
+
+  .profile-right {
+    margin-top: 30px;
+  }
+
+  .project-grid,
+  .leadership-items,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 5px;
+  }
+}
+
