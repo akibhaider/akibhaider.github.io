@@ -14,12 +14,6 @@ main:
     url: /portfolio/
   - title: "CV"
     url: /cv/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "Talks"
-    url: /talks/
-  - title: "Blog"
-    url: /posts/
 
   - title: "Portfolio"
     url: /portfolio/
