@@ -16,3 +16,14 @@ Name2 Name2:
   avatar      : "bio-photo.jpg"
   twitter     : "name2"
   google_plus : "Name"
+
+default:
+  name: "Md Akib Haider"
+  avatar: "/images/profile.png"
+  bio: "B.Sc. in Computer Science and Engineering at Islamic University of Technology (IUT). Research interests in Computer Vision, Deep Reinforcement Learning, Machine Learning, and Medical Imaging."
+  location: "Boardbazar, Gazipur"
+  employer: "Islamic University of Technology"
+  uri: "https://akibhaider.github.io"
+  email: "akibhaider@iut-dhaka.edu"
+  github: "akibhaider"
+  linkedin: "md-akib-haider-1252051ab"
