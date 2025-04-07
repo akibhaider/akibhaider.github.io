@@ -1,152 +1,166 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Md Akib Haider",
+    "email": "akibhaider@iut-dhaka.edu",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://akibhaider.github.io",
+    "summary": "B.Sc. in Computer Science and Engineering at Islamic University of Technology (IUT). Research interests in Computer Vision, Deep Reinforcement Learning, Machine Learning, and Medical Imaging.",
     "location": {
-      "address": "",
+      "address": "Boardbazar",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Gazipur",
+      "countryCode": "BD",
       "region": ""
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "akibhaider",
+        "url": "https://github.com/akibhaider"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Md Akib Haider",
+        "url": "https://linkedin.com/in/md-akib-haider-1252051ab"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "SwadeshBazar",
+      "position": "App Design and Development",
+      "website": "",
+      "startDate": "2024-11",
+      "endDate": "Present",
+      "summary": "E-Commerce Application (improved customer service with Agentic-AI) for a start-up using Flutter and Node.JS",
+      "highlights": []
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "institution": "Islamic University of Technology (IUT)",
+      "area": "B.Sc. in Computer Science and Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2022-08",
+      "endDate": "Present",
+      "gpa": "3.89/4.0",
+      "courses": [
+        "Structured Programming",
+        "Data Structures",
+        "Algorithms",
+        "Operating Systems",
+        "Discrete Mathematics",
+        "Linear Algebra",
+        "Object Oriented Programming",
+        "Database Management Systems",
+        "Simulation and Modeling",
+        "Software Development and Design",
+        "Computer Networks",
+        "Microprocessor and Assembly Language"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "institution": "Notre Dame College (NDC)",
+      "area": "Higher Secondary School Certificate (HSC), Science",
+      "studyType": "High School",
+      "startDate": "2019",
+      "endDate": "2021",
+      "gpa": "5.0/5.0",
       "courses": []
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "Languages",
+      "level": "",
+      "keywords": [
+        "C/C++",
+        "Python",
+        "Java",
+        "Javascript",
+        "Typescript",
+        "Bash",
+        "Dart"
+      ]
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "level": "",
+      "keywords": [
+        "Flutter",
+        "NumPy",
+        "Pandas",
+        "OpenCV",
+        "Matplotlib",
+        "Bootstrap",
+        "Next",
+        "Nest",
+        "React",
+        "Swing",
+        "JavaFX"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "",
+      "keywords": [
+        "SQLAlchemy",
+        "PostgreSQL",
+        "Prisma",
+        "PL/SQL",
+        "SQLite"
+      ]
+    },
+    {
+      "name": "Tools",
+      "level": "",
+      "keywords": [
+        "Git",
+        "GitHub",
+        "Figma",
+        "Adobe Illustrator",
+        "LaTeX",
+        "Markdown"
+      ]
+    }
+  ],
   "languages": [],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Research Interests",
+      "keywords": [
+        "Computer Vision",
+        "Deep Reinforcement Learning",
+        "Machine Learning",
+        "Medical Imaging"
+      ]
+    }
+  ],
   "references": [],
-  "publications": [
-    {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
+  "publications": [],
+  "presentations": [],
+  "teaching": [],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
+      "name": "Better_SIS",
+      "category": "University Management System",
       "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "url": "https://github.com/akibhaider/BetterSIS",
+      "description": "Student Information System of Islamic University of Technology (IUT). All Academic Activity and Internal Service Management System for students, teachers and staffs."
+    },
+    {
+      "name": "Xchange",
+      "category": "File Sharing System",
+      "date": "",
+      "url": "https://github.com/akibhaider/Xchange",
+      "description": "Secure, Fast and Efficient peer-to-peer File Transfer on same local network, omitting internet connection need."
+    },
+    {
+      "name": "Typrophecy",
+      "category": "Typing Testing on Custom Text",
+      "date": "",
+      "url": "https://github.com/akibhaider/typrophecy",
+      "description": "Practice and Test typing speed on custom text (programming or human languages) instead of random words."
     }
   ]
 }
