@@ -20,8 +20,7 @@ Name Name:
 default:
   name: "Md Akib Haider"
   avatar: "/images/profile.png"
-  bio: "CSE undergraduate at Islamic University of Technology (IUT). 
-  Research interests: Computer Vision, Deep Reinforcement Learning, Machine Learning, and Medical Imaging."
+  bio: "CSE undergraduate at Islamic University of Technology (IUT)."
   location: "Boardbazar, Gazipur"
   # employer: "Islamic University of Technology"
   uri: "https://akibhaider.github.io"
