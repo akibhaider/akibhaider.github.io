@@ -1,28 +1,29 @@
 # Authors
 
 Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
+  name        : "Md Akib Haider
+  uri         : "https://akibhaider.github.io/"
+  email       : "akibhaider@iut-dhaka.edu"
+  # bio         : "This is the first name."
   avatar      : "bio-photo-2.jpg"
   twitter     : "name"
   google_plus : "Name"
 
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+# Name2 Name2:
+#   name        : "Name2 Name2"
+#   email       : "name2@name2.com"
+#   bio         : "I ordered what?"
+#   avatar      : "bio-photo.jpg"
+#   twitter     : "name2"
+#   google_plus : "Name"
 
 default:
   name: "Md Akib Haider"
   avatar: "/images/profile.png"
-  bio: "B.Sc. in Computer Science and Engineering at Islamic University of Technology (IUT). Research interests in Computer Vision, Deep Reinforcement Learning, Machine Learning, and Medical Imaging."
+  bio: "CSE undergraduate at Islamic University of Technology (IUT). 
+  Research interests: Computer Vision, Deep Reinforcement Learning, Machine Learning, and Medical Imaging."
   location: "Boardbazar, Gazipur"
-  employer: "Islamic University of Technology"
+  # employer: "Islamic University of Technology"
   uri: "https://akibhaider.github.io"
   email: "akibhaider@iut-dhaka.edu"
   github: "akibhaider"

@@ -12,9 +12,9 @@ I am a B.Sc. student in Computer Science and Engineering at Islamic University o
 Education
 ======
 * B.Sc. in Computer Science and Engineering, Islamic University of Technology (IUT), 2022-Present
-  * CGPA: 3.89/4.0 (10th in class) [upto 5th Semester]
+  * CGPA: 3.89/4.0 [upto 5th Semester]
 * Higher Secondary School Certificate (HSC), Science, Notre Dame College (NDC), 2019-2021
-  * GPA: 5.0/5.0 (Government Scholarship Awardee, among top 0.3% in Bangladesh)
+  * GPA: 5.0/5.0
 
 Work Experience
 ======
@@ -48,9 +48,9 @@ Projects
   * Secure, Fast and Efficient peer-to-peer File Transfer on same local network
   * [GitHub Repository](https://github.com/akibhaider/Xchange)
 
-* Typrophecy
+<!-- * Typrophecy
   * Practice and Test typing speed on custom text (programming or human languages)
-  * [GitHub Repository](https://github.com/akibhaider/typrophecy)
+  * [GitHub Repository](https://github.com/akibhaider/typrophecy) -->
 
 Leadership & Voluntary Activities
 ======

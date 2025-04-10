@@ -155,12 +155,19 @@
       "url": "https://github.com/akibhaider/Xchange",
       "description": "Secure, Fast and Efficient peer-to-peer File Transfer on same local network, omitting internet connection need."
     },
+    // {
+    //   "name": "Typrophecy",
+    //   "category": "Typing Testing on Custom Text",
+    //   "date": "",
+    //   "url": "https://github.com/akibhaider/typrophecy",
+    //   "description": "Practice and Test typing speed on custom text (programming or human languages) instead of random words."
+    // },
     {
-      "name": "Typrophecy",
-      "category": "Typing Testing on Custom Text",
+      "name": "Book_Haven",
+      "category": "Bookshop Management System",
       "date": "",
-      "url": "https://github.com/akibhaider/typrophecy",
-      "description": "Practice and Test typing speed on custom text (programming or human languages) instead of random words."
+      "url": "https://github.com/akibhaider/BOOK_HAVEN",
+      "description": "Bookshop management system with book-lover's forum, books reviewing-borrowing-sharing, competition organizing and rewards features for bookworms! (academic project for Object Oriented Programming Lab)"
     }
   ]
 }

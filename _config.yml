@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Md Akib Haider"
 title_separator          : "-"
 name                     : &name "Md Akib Haider"
-description              : &description "B.Sc. in Computer Science and Engineering at Islamic University of Technology (IUT)"
+description              : &description "CSE undergraduate at Islamic University of Technology (IUT)"
 url                      : https://akibhaider.github.io
 baseurl                  : ""
 repository               : "akibhaider/akibhaider.github.io"
@@ -25,7 +25,8 @@ author:
   avatar           : "profile.png"
   name             : "Md Akib Haider"
   pronouns         : # example: "she/her"  
-  bio              : "B.Sc. in Computer Science and Engineering at Islamic University of Technology (IUT). Research interests in Computer Vision, Deep Reinforcement Learning, Machine Learning, and Medical Imaging."
+  bio              : "CSE undergraduate at Islamic University of Technology (IUT). 
+                      Research interests: Computer Vision, Deep Reinforcement Learning, Machine Learning, and Medical Imaging."
   location         : "Boardbazar, Gazipur"
   employer         : "Islamic University of Technology"
   uri              : "https://akibhaider.github.io"
@@ -33,11 +34,11 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : ""
+  googlescholar    : # URL
   impactstory      : # URL
-  orcid            : ""
+  orcid            : # URL
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
 
@@ -50,7 +51,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
