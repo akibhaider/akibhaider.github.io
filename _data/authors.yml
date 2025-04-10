@@ -1,7 +1,7 @@
 # Example of a correct authors.yml file
 akibhaider:
   name: Md Akib Haider
-  bio: CSE undergraduate at Islamic University of Technology (IUT). Research interests: Computer Vision, Deep Reinforcement Learning, Machine Learning, and Medical Imaging.
+  bio: CSE undergraduate at Islamic University of Technology (IUT). Research interests include Computer Vision, Deep Reinforcement Learning, Machine Learning, and Medical Imaging.
   location: Dhaka, Bangladesh
   links:
     - label: "Email"
