@@ -10,7 +10,7 @@ redirect_from:
 
 
 
-![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-right width="300px"}
+![Illustration of combining vision and language modalities](/images/vlm.png){: .align-right width="300px"}
 👨🏻‍💻 I'm an undergraduate student at Islamic University of Technology.
 
 🔬 My research interests are in Computer vision, Multimodal Large Language Models, Deep Learning and Reinforcement Learning in Medical Imaging
