@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "CSE undergrad at IUT. Computer Vision and Deep Learning Researcher"
   location         : "Dhaka, Bangladesh"
-  employer         : "IUT"
+  employer         : "Islamic University of Technology"
   uri              : "https://akibhaider.github.io"
   email            : "akibhaider@iut-dhaka.edu" 
 
@@ -294,7 +294,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Dhaka # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -305,7 +305,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
-
+  - jekyll-last-modified-at
 # Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
@@ -315,7 +315,8 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-
+last_modified_at:
+  date-format: '%d-%b-%y'
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)

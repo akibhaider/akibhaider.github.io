@@ -1,0 +1,12 @@
+:root {
+  --page-bg: #fff;
+  --text-color: #222;
+  --accent-color: #2196f3;
+  --card-img-bg: #f5f5f5;
+}
+[data-theme="dark"] {
+  --page-bg: #18191a;
+  --text-color: #fff;
+  --accent-color: #2196f3;
+  --card-img-bg: #222;
+} 

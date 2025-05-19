@@ -7,6 +7,9 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jemoji'
   gem 'webrick', '~> 1.8'
+  gem 'jekyll-last-modified-at'
+  gem 'jekyll-seo-tag'
 end
 
 gem 'github-pages'
+gem 'tzinfo-data'
