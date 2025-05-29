@@ -20,20 +20,9 @@ redirect_from:
     <a href="https://www.andrewng.org/">Andrew Ng</a>, 
     <a href="https://autarkaw.com">Autar Kaw</a>, 
     <a href="https://scholar.google.com/citations?user=KHswVgsAAAAJ&hl=en">Kh Tohidul ISLAM</a>
-  </div>
+</div>
 
-
-<script>
-function copyLifeEventLink(postId) {
-  const url = window.location.origin + window.location.pathname + '#' + postId;
-  navigator.clipboard.writeText(url);
-  const btn = document.querySelector(`#${postId} .life-event-share`);
-  btn.innerHTML = '✔️';
-  setTimeout(() => {
-    btn.innerHTML = `<svg width="22" height="22" fill="none" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>`;
-  }, 1200);
-}
-</script>
+Check out my [achievements](/achievements/) page to see my notable milestones and accomplishments!
 
 <br><br>
 <div style="display: flex; justify-content: center; align-items: center; margin: 2.5rem 0;">
@@ -44,10 +33,3 @@ function copyLifeEventLink(postId) {
   </div>
 </div>
 
-{% include life_event_card.html
-   id="108"
-   date="May 01, 2025"
-   img="/images/x.png"
-   title="MapEval got accepted in ICML 2025"
-   desc="Our paper 'MapEval: A Map-Based Evaluation of Geo-Spatial Reasoning in Foundation Models' was accepted as a spotlight poster at ICML 2025."
-%}
