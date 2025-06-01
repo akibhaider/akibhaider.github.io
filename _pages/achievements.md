@@ -4,9 +4,9 @@ title: "Achievements"
 excerpt: "My achievements and milestones"
 author_profile: true
 ---
-Here are some of my notable achievements and milestones in my academic and professional journey.
 
-{% include life_event_card.html
+
+{% include achievements_card.html
    id="1"
    date="May 25, 2025"
    img="/images/1_coderush_hackathon.jpg"
@@ -14,7 +14,7 @@ Here are some of my notable achievements and milestones in my academic and profe
    desc="Our mobile application on 'Student Driven Marketplace' stood out among 30 teams at IUT."
 %}
 
-{% include life_event_card.html
+{% include achievements_card.html
    id="2"
    date="December 07, 2024"
    img="/images/4_icpc_24.jpg"
@@ -22,14 +22,14 @@ Here are some of my notable achievements and milestones in my academic and profe
    desc="IUT_notBlue: Ranked 102th out of 300+ teams all around Bangladesh (6th in IUT)."
 %}
 
-{% include life_event_card.html
+{% include achievements_card.html
    id="3"
    date="September 05, 2024"
    img="/images/2_ijpc.jpg"
    title="6th in Intra University Junior Programming Contest 2024"
 %}
 
-{% include life_event_card.html
+{% include achievements_card.html
    id="4"
    date="August 25, 2024"
    img="/images/3_cf_specialist.png"
@@ -37,7 +37,7 @@ Here are some of my notable achievements and milestones in my academic and profe
    desc="After 3 months of continuous practice, I became specilaist in Codeforces. Primarily used C++ to solve problems."
 %}
 
-{% include life_event_card.html
+{% include achievements_card.html
    id="5"
    date="May 1, 2024"
    img="/images/5_iut_iupc.png"
@@ -45,7 +45,7 @@ Here are some of my notable achievements and milestones in my academic and profe
    desc="IUT_Pounopunik: Ranked 52th (4th in IUT)."
 %}
 
-{% include life_event_card.html
+{% include achievements_card.html
    id="6"
    date="November 10, 2023"
    img="/images/6_ctf_cybercrawler.png"

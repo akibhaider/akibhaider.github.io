@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /*.map$
+Disallow: /.well-known/ 

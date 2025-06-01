@@ -13,12 +13,16 @@ main:
 
   # - title: "Talks"
   #   url: /talks/    
+  - title: "Achievements"
+    url: /achievements/
+
+
+  - title: "Projects"
+    url: /projects/  
 
   # - title: "Teaching"
   #   url: /teaching/    
-    
-  - title: "Achievements"
-    url: /achievements/
+
         
   # - title: "Blog Posts"
   #   url: /year-archive/

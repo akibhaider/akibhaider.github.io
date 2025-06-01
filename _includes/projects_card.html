@@ -1,0 +1,144 @@
+<div class="life-event-card" id="{{ include.id }}">
+  <div class="life-event-date">{{ include.date }}</div>
+  <div class="life-event-content">
+    <img src="{{ include.img }}" alt="{{ include.title }}" class="life-event-image">
+    <div class="life-event-details">
+      <h3 class="life-event-title">{{ include.title }}</h3>
+      {% if include.desc %}
+        <p class="life-event-description">{{ include.desc }}</p>
+      {% endif %}
+      <div class="life-event-icons">
+        <div class="life-event-share" onclick="copyLifeEventLink('{{ include.id }}')">
+          <svg width="22" height="22" fill="none" stroke="#40bfff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <circle cx="18" cy="5" r="3"/>
+            <circle cx="6" cy="12" r="3"/>
+            <circle cx="18" cy="19" r="3"/>
+            <path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/>
+          </svg>
+        </div>
+        {% if include.github %}
+          <div class="life-event-github" data-url="{{ include.github }}">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#171516" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </div>
+        {% endif %}
+        {% if include.youtube %}
+          <div class="life-event-youtube" data-url="{{ include.youtube }}">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#E53935"></polygon>
+            </svg>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function copyLifeEventLink(postId) {
+  const url = window.location.origin + window.location.pathname + '#' + postId;
+  navigator.clipboard.writeText(url);
+  const btn = document.querySelector(`#${postId} .life-event-share`);
+  btn.innerHTML = '<span style="color: #40bfff;">✔️</span>';
+  setTimeout(() => {
+    btn.innerHTML = `<svg width="22" height="22" fill="none" stroke="#40bfff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>`;
+  }, 1200);
+}
+</script>
+
+<style>
+:root {
+  --card-desc-color: #222;
+  --accent-color: #40bfff;
+  --date-color: #cc0000;
+}
+[data-theme="dark"] {
+  --card-desc-color: #fff;
+  --accent-color: #40bfff;
+  --date-color: #f4b084;
+}
+.life-event-card {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.life-event-card:hover {
+  transform: translateY(-5px);
+}
+
+.life-event-date {
+  color: var(--date-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.life-event-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.life-event-image {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  background: var(--card-img-bg, #222);
+}
+
+.life-event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.life-event-title {
+  margin: 0;
+  color: var(--accent-color, #40bfff);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.life-event-description {
+  margin: 0;
+  color: var(--card-desc-color, #222);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.life-event-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.life-event-share, .life-event-github, .life-event-youtube {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.life-event-share:hover, .life-event-github:hover, .life-event-youtube:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .life-event-card { max-width: 98vw; }
+  .life-event-image { max-width: 100%; }
+}
+</style>

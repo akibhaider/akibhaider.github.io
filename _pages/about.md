@@ -17,12 +17,15 @@ redirect_from:
     <br><br>
     Some people in academia that I follow/look up to — <br>
     <a href="https://karpathy.ai/">Andrej Karpathy</a>, 
+    <a href="https://scholar.google.com/citations?user=UZ5wscMAAAAJ&hl=en">Andrew Zisserman</a>,
     <a href="https://www.andrewng.org/">Andrew Ng</a>, 
     <a href="https://autarkaw.com">Autar Kaw</a>, 
+    <a href="https://scholar.google.com/citations?user=bRT7t28AAAAJ&hl=en">Andrea Vedaldi</a>,
+    <a href="https://scholar.google.com/citations?user=hWzXZUMAAAAJ&hl=en">Viorica Patraucean</a>,
+    <a href="https://scholar.google.com/citations?user=J5f4Gq8AAAAJ&hl=en">Jeff Fessler</a>,
+    <a href="https://scholar.google.com/citations?user=EemUE4gAAAAJ&hl=en">Zhifeng Chen</a>,
     <a href="https://scholar.google.com/citations?user=KHswVgsAAAAJ&hl=en">Kh Tohidul ISLAM</a>
 </div>
-
-Check out my [achievements](/achievements/) page to see my notable milestones and accomplishments!
 
 <br><br>
 <div style="display: flex; justify-content: center; align-items: center; margin: 2.5rem 0;">
