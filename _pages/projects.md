@@ -27,7 +27,7 @@ author_profile: true
    youtube="https://www.youtube.com/watch?v=tCIwjp7nuDM"
 %}
 
-{% include projects_card.html
+<!-- {% include projects_card.html
    id="project3"
    date="Flutter, Firebase"
    img="/images/6_ctf_cybercrawler.png"
@@ -35,7 +35,7 @@ author_profile: true
    desc="............................."
    github="https://www.youtube.com/watch?v=tCIwjp7nuDM"
    youtube="https://youtube.com/watch?v=your-video-id"
-%}
+%} -->
 
 {% include projects_card.html
    id="project4"
