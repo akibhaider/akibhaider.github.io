@@ -24,7 +24,13 @@ redirect_from:
     <a href="https://scholar.google.com/citations?user=hWzXZUMAAAAJ&hl=en">Viorica Patraucean</a>,
     <a href="https://scholar.google.com/citations?user=J5f4Gq8AAAAJ&hl=en">Jeff Fessler</a>,
     <a href="https://scholar.google.com/citations?user=EemUE4gAAAAJ&hl=en">Zhifeng Chen</a>,
+    <a href="https://scholar.google.ca/citations?hl=en&user=Ih7iLuUAAAAJ&view_op=list_works">Ajay Jain</a>,
+    <a href="https://scholar.google.com/citations?user=6dP660cAAAAJ&hl=en">Jiaming Song</a>,
+    <a href="https://scholar.google.com/citations?user=wsGvgA8AAAAJ&hl=en">Noam Shazeer</a>,
+    <a href="https://scholar.google.com/citations?user=oR9sCGYAAAAJ&hl=en">Ashish Vaswani</a>, 
+    <a href="https://scholar.google.com/citations?user=0pOgVVAAAAAJ&hl=en">Prafulla Dhariwal</a>,
     <a href="https://scholar.google.com/citations?user=KHswVgsAAAAJ&hl=en">Kh Tohidul ISLAM</a>
+
 </div>
 
 <br><br>
