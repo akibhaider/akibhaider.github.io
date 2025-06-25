@@ -5,48 +5,55 @@ excerpt: "My achievements and milestones"
 author_profile: true
 ---
 
-
 {% include achievements_card.html
    id="1"
-   date="May 25, 2025"
-   img="/images/1_coderush_hackathon.jpg"
-   title="Team Vibin Innit: Champion in Intra University Hackathon Coderush 2025"
-   desc="Our mobile application on 'Student Driven Marketplace' stood out among 30 teams at IUT."
+   date="June 21, 2025"
+   img="/images/7_uuiupc.jpg"
+   title="Uttara University-Inter University Programming Contest 2025"
+   desc="IUT_notBlue: Ranked 80th out of 130+ teams all around Bangladesh (5th in IUT)"
 %}
 
 {% include achievements_card.html
    id="2"
-   date="December 07, 2024"
-   img="/images/4_icpc_24.jpg"
-   title="ACM ICPC ASIA Dhaka Regional Programming Contest."
-   desc="IUT_notBlue: Ranked 102th out of 300+ teams all around Bangladesh (6th in IUT)."
+   date="May 25, 2025"
+   img="/images/1_coderush_hackathon.jpg"
+   title="Team Vibin Innit: Champion in Intra University Hackathon Coderush 2025"
+   desc="Our mobile application on 'Student Driven Marketplace' stood out at IUT"
 %}
 
 {% include achievements_card.html
    id="3"
+   date="December 07, 2024"
+   img="/images/4_icpc_24.jpg"
+   title="ACM ICPC ASIA Dhaka Regional Programming Contest"
+   desc="IUT_notBlue: Ranked 102th out of 300+ teams all around Bangladesh (6th in IUT)"
+%}
+
+{% include achievements_card.html
+   id="4"
    date="September 05, 2024"
    img="/images/2_ijpc.jpg"
    title="6th in Intra University Junior Programming Contest 2024"
 %}
 
 {% include achievements_card.html
-   id="4"
+   id="5"
    date="August 25, 2024"
    img="/images/3_cf_specialist.png"
    title="Became Specialist in Codeforces"
-   desc="After 3 months of continuous practice, I became specilaist in Codeforces. Primarily used C++ to solve problems."
-%}
-
-{% include achievements_card.html
-   id="5"
-   date="May 1, 2024"
-   img="/images/5_iut_iupc.png"
-   title="IUT Inter University Programming Contest 2024"
-   desc="IUT_Pounopunik: Ranked 52th (4th in IUT)."
+   desc="After 3 months of continuous practice, I became specilaist in Codeforces. Primarily used C++ to solve problems"
 %}
 
 {% include achievements_card.html
    id="6"
+   date="May 1, 2024"
+   img="/images/5_iut_iupc.png"
+   title="IUT Inter University Programming Contest 2024"
+   desc="IUT_Pounopunik: Ranked 52th out of 110+ teams all around Bangladesh (4th in IUT)"
+%}
+
+{% include achievements_card.html
+   id="7"
    date="November 10, 2023"
    img="/images/6_ctf_cybercrawler.png"
    title="Cyber Crawler Capture The Flag 2023"
