@@ -8,7 +8,7 @@ author_profile: true
 {% include achievements_card.html
    id="1"
    date="June 21, 2025"
-   img="/images/7_uuiupc.jpg"
+   img="/images/7_uuiupc.JPG"
    title="Uttara University-Inter University Programming Contest 2025"
    desc="IUT_notBlue: Ranked 80th out of 130+ teams all around Bangladesh (5th in IUT)"
 %}
