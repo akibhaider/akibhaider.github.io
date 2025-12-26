@@ -35,11 +35,9 @@ redirect_from:
 
 <br><br>
 <div style="display: flex; justify-content: center; align-items: center; margin: 2.5rem 0;">
-  <div style="border: 2px solid #fff; border-radius: 18px; padding: 1.5rem 2rem; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); display: flex; flex-direction: column; align-items: center; transition: background 0.3s;">
-    <div style="width: 600px; max-width: 90vw; text-align: center;">
-      <a href="https://mapmyvisitors.com/web/1c1hj"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=6BSzSFZb7Nts2fXjYsHIGArPqNB0JnlmrsyTM3VVGmg&cl=ffffff" alt="ClustrMaps" />
+  <div style="border: 2px solid #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); display: flex; flex-direction: column; align-items: center; transition: background 0.3s;">
+      <a href="https://mapmyvisitors.com/web/1c1hj" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=6BSzSFZb7Nts2fXjYsHIGArPqNB0JnlmrsyTM3VVGmg&cl=ffffff" style="width: 600px; max-width: 90vw; display: block;" alt="ClustrMaps" />
       </a>
-    </div>
   </div>
 </div>
 
