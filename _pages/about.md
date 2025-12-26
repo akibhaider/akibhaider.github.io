@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi there! You are stalking Akib 😃"
+title: "Hi there 😃 Call me by Akib"
 excerpt: "About me"
 author_profile: true
 redirect_from: 

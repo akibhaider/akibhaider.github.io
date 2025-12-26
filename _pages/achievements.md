@@ -7,6 +7,22 @@ author_profile: true
 
 {% include achievements_card.html
    id="1"
+   date="Nov 16 - Nov 21, 2025"
+   img="/images/9_sc25.jpg"
+   title="ACM SIGHPC Immersion Travel Grantee"
+   desc="Visited St. Louis, Missouri, USA to attend the SC25 conference. Met Sidney Fernbach Memorial Awardee <a href='https://scholar.google.com/citations?user=dts9eDUAAAAJ&hl=en' target='_blank'>Dr. Ewa Deelman</a> and renowned author and entrepreneur <a href='https://tkspeaks.com/' target='_blank'>Thomas Koulopoulos</a>. <a href='https://www.linkedin.com/posts/akib-haider-1252051ab_thats-a-wrap-to-this-years-sc-conference-activity-7397835020628877312-E-A7?utm_source=share&utm_medium=member_android&rcm=ACoAADD5am0B9jxcAFMtDMy5KFbbtb8_b72Ibq8' target='_blank'>Details</a>"
+%}
+
+{% include achievements_card.html
+   id="2"
+   date="Aug 30, 2025"
+   img="/images/8_judge_iupc.jpg"
+   title="Judge in Intra-IUT Programming Contest"
+   desc="Set two problems in IUT-Intra University Programming Contest 2025 and Intra-IUT Junior Programming Contest 2025"
+%}
+
+{% include achievements_card.html
+   id="3"
    date="June 21, 2025"
    img="/images/7_uuiupc.JPG"
    title="Uttara University-Inter University Programming Contest 2025"
@@ -14,7 +30,7 @@ author_profile: true
 %}
 
 {% include achievements_card.html
-   id="2"
+   id="4"
    date="May 25, 2025"
    img="/images/1_coderush_hackathon.jpg"
    title="Team Vibin Innit: Champion in Intra University Hackathon Coderush 2025"
@@ -22,7 +38,7 @@ author_profile: true
 %}
 
 {% include achievements_card.html
-   id="3"
+   id="5"
    date="December 07, 2024"
    img="/images/4_icpc_24.jpg"
    title="ACM ICPC ASIA Dhaka Regional Programming Contest"
@@ -30,14 +46,14 @@ author_profile: true
 %}
 
 {% include achievements_card.html
-   id="4"
+   id="6"
    date="September 05, 2024"
    img="/images/2_ijpc.jpg"
    title="6th in Intra University Junior Programming Contest 2024"
 %}
 
 {% include achievements_card.html
-   id="5"
+   id="7"
    date="August 25, 2024"
    img="/images/3_cf_specialist.png"
    title="Became Specialist in Codeforces"
@@ -45,7 +61,7 @@ author_profile: true
 %}
 
 {% include achievements_card.html
-   id="6"
+   id="8"
    date="May 1, 2024"
    img="/images/5_iut_iupc.png"
    title="IUT Inter University Programming Contest 2024"
@@ -53,7 +69,7 @@ author_profile: true
 %}
 
 {% include achievements_card.html
-   id="7"
+   id="9"
    date="November 10, 2023"
    img="/images/6_ctf_cybercrawler.png"
    title="Cyber Crawler Capture The Flag 2023"
