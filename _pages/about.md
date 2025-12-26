@@ -37,7 +37,9 @@ redirect_from:
 <div style="display: flex; justify-content: center; align-items: center; margin: 2.5rem 0;">
   <div style="border: 2px solid #fff; border-radius: 18px; padding: 1.5rem 2rem; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); display: flex; flex-direction: column; align-items: center; transition: background 0.3s;">
     <div style="width: 600px; max-width: 90vw; text-align: center;">
-      <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=H3ITc0S07VefCu3xFz-DiUAVjx5Ah5KlQ2DklgRmfM4&cl=ffffff&w=600"></script>
+      <a href="https://clustrmaps.com/site/1c8y8" title="Visit tracker">
+        <img src="//www.clustrmaps.com/map_v2.png?d=H3ITc0S07VefCu3xFz-DiUAVjx5Ah5KlQ2DklgRmfM4&cl=ffffff&w=600" alt="ClustrMaps" />
+      </a>
     </div>
   </div>
 </div>
