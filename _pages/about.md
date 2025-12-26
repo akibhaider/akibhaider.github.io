@@ -36,7 +36,7 @@ redirect_from:
 <br><br>
 <div style="display: flex; justify-content: center; align-items: center; margin: 2.5rem 0;">
   <div style="border: 2px solid #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); display: flex; flex-direction: column; align-items: center; transition: background 0.3s;">
-      <a href="https://mapmyvisitors.com/web/1c1hj" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?cl=ffffff&w=550&t=n&d=6BSzSFZb7Nts2fXjYsHIGArPqNB0JnlmrsyTM3VVGmg" style="width: 550px; max-width: 90vw; display: block;" alt="Site Visitor Map" />
+      <a href="https://mapmyvisitors.com/web/1c1hj" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?cl=ffffff&w=550&d=6BSzSFZb7Nts2fXjYsHIGArPqNB0JnlmrsyTM3VVGmg" style="width: 550px; max-width: 90vw; display: block;" alt="Site Visitor Map" />
       </a>
   </div>
 </div>
