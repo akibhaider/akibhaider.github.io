@@ -33,7 +33,6 @@ author_profile: true
    title="XChange"
    desc="Faster & Efficient File Sharing System without Internet in Local Server"
    github="https://github.com/akibhaider/Xchange"
-   youtube="https://www.youtube.com/watch?v=tCIwjp7nuDM"
 %}
 
 <!-- {% include projects_card.html
@@ -73,7 +72,6 @@ author_profile: true
    title="Pomodor Timer"
    desc="Productive pomodoro timer with 5 minutes short break, 15 minutes long break"
    github="https://github.com/akibhaider/Pomodoro_Timer"
-   youtube="https://www.youtube.com/watch?v=tCIwjp7nuDM"
 %}
 
 
