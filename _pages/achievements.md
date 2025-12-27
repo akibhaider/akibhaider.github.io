@@ -18,7 +18,7 @@ author_profile: true
    date="Aug 30, 2025"
    img="/images/8_judge_iupc.jpg"
    title="Judge in Intra-IUT Programming Contest"
-   desc="Set two problems in IUT-Intra University Programming Contest 2025 and Intra-IUT Junior Programming Contest 2025"
+   desc="Set two problems in <a href='https://github.com/ir-rafio/AHIUPC-2025-Problemset' target='_blank'>IUT-Intra University Programming Contest 2025</a> and <a href='https://github.com/ir-rafio/IJPC-2025-Problemset' target='_blank'>Intra-IUT Junior Programming Contest 2025</a>"
 %}
 
 {% include achievements_card.html

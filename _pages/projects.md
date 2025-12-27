@@ -9,6 +9,15 @@ author_profile: true
 
 {% include projects_card.html
    id="project1"
+   date="Flutter Riverpod, Router API, Supabase"
+   img="/images/project_ecommerce.png"
+   title="Bazar Sodai"
+   desc="E-commerce Cross Platform Application built with Flutter, prototype for android version of <a href='https://bazarsodai.co.uk/' target='_blank'>Bazar Sodai</a>"
+   github="https://github.com/akibhaider/ecommerce"
+%}
+
+{% include projects_card.html
+   id="project2"
    date="Dart, C++, Swift, Python, Firebase"
    img="/images/project_bettersis.png"
    title="Better-SIS"
@@ -18,7 +27,7 @@ author_profile: true
 %}
 
 {% include projects_card.html
-   id="project2"
+   id="project3"
    date="Java, Socket Programming"
    img="/images/project_xchange.png"
    title="XChange"
@@ -28,7 +37,7 @@ author_profile: true
 %}
 
 <!-- {% include projects_card.html
-   id="project3"
+   id="project4"
    date="Flutter, Firebase"
    img="/images/6_ctf_cybercrawler.png"
    title="TheStudentDrivenMarketPlace"
@@ -38,7 +47,7 @@ author_profile: true
 %} -->
 
 {% include projects_card.html
-   id="project4"
+   id="project5"
    date="C++, Qt, QSql"
    img="/images/project_bookhaven.png"
    title="Book-Haven"
@@ -48,7 +57,7 @@ author_profile: true
 %}
 
 {% include projects_card.html
-   id="project5"
+   id="project6"
    date="JavaFx, HTML5, CSS3"
    img="/images/project_battleship.png"
    title="BattleShip_Guessing_Game_JavaFx"
@@ -58,7 +67,7 @@ author_profile: true
 %}
 
 {% include projects_card.html
-   id="project6"
+   id="project7"
    date="JavaFx, Scene-Builder"
    img="/images/project_pomodoro.png"
    title="Pomodor Timer"
