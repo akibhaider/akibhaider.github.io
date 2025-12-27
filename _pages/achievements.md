@@ -81,9 +81,9 @@ function copyLifeEventLink(postId) {
   const url = window.location.origin + window.location.pathname + '#' + postId;
   navigator.clipboard.writeText(url);
   const btn = document.querySelector(`#${postId} .life-event-share`);
-  btn.innerHTML = '✔️';
+  btn.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#40bfff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
   setTimeout(() => {
-    btn.innerHTML = `<svg width="22" height="22" fill="none" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>`;
+    btn.innerHTML = `<svg width="22" height="22" fill="none" stroke="#40bfff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>`;
   }, 1200);
 }
 </script> 

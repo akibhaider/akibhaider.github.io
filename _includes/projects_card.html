@@ -17,19 +17,19 @@
           </svg>
         </div>
         {% if include.github %}
-          <div class="life-event-github" data-url="{{ include.github }}">
+          <a href="{{ include.github }}" target="_blank" rel="noopener noreferrer" class="life-event-github">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#171516" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
             </svg>
-          </div>
+          </a>
         {% endif %}
         {% if include.youtube %}
-          <div class="life-event-youtube" data-url="{{ include.youtube }}">
+          <a href="{{ include.youtube }}" target="_blank" rel="noopener noreferrer" class="life-event-youtube">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
               <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#E53935"></polygon>
             </svg>
-          </div>
+          </a>
         {% endif %}
       </div>
     </div>
@@ -41,7 +41,7 @@ function copyLifeEventLink(postId) {
   const url = window.location.origin + window.location.pathname + '#' + postId;
   navigator.clipboard.writeText(url);
   const btn = document.querySelector(`#${postId} .life-event-share`);
-  btn.innerHTML = '<span style="color: #40bfff;">✔️</span>';
+  btn.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#40bfff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
   setTimeout(() => {
     btn.innerHTML = `<svg width="22" height="22" fill="none" stroke="#40bfff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>`;
   }, 1200);
@@ -131,6 +131,12 @@ function copyLifeEventLink(postId) {
 .life-event-share, .life-event-github, .life-event-youtube {
   cursor: pointer;
   transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+a.life-event-github, a.life-event-youtube {
+  text-decoration: none;
 }
 
 .life-event-share:hover, .life-event-github:hover, .life-event-youtube:hover {
