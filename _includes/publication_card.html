@@ -33,9 +33,11 @@
           </a>
         {% endif %}
 
+        {% if include.bibtex and include.bibtex != "" %}
         <button class="pub-btn bibtex-btn" onclick="toggleBibtex('{{ include.id }}')" title="Toggle BibTeX" type="button">
           <span style="font-variant: small-caps; font-size: 14px;" class="latex">B<span style="font-size: 12px;">ib</span>T<sub>e</sub>X</span>
         </button>
+        {% endif %}
       </div>
     </div>
   </div>
