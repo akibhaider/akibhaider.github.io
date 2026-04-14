@@ -10,7 +10,7 @@ author_profile: true
 
 {% include publication_card.html
    id="pub1"
-   img="/images/lora-mme-nlbse.png"
+   img="/images/lora-mme-nlbse2.png"
    title="LoRA-MME: Multi-Model Ensemble of LoRA-Tuned Encoders for Code
 Comment Classification"
    authors="Md Akib Haider, Ahsan Bulbul, Nafis Fuad Shahid, Aimaan Ahmed, and Mohammad Ishrak Abedin"
