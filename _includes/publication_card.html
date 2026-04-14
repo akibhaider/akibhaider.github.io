@@ -38,6 +38,13 @@
           <span style="font-variant: small-caps; font-size: 14px;" class="latex">B<span style="font-size: 12px;">ib</span>T<sub>e</sub>X</span>
         </button>
         {% endif %}
+
+        {% if include.presentation %}
+        <button class="pub-btn presentation-btn" onclick="openVideoModal('{{ include.id }}', '{{ include.presentation }}')" title="Watch presentation" type="button">
+          <i class="fa fa-play-circle"></i>
+          <span>Presentation</span>
+        </button>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -55,7 +62,47 @@
   </div>
 </div>
 
+<!-- Video Modal (shared, rendered once per page load) -->
+<div id="presentation-modal" class="presentation-modal-overlay" style="display:none;" onclick="closeVideoModal(event)">
+  <div class="presentation-modal-box">
+    <button class="presentation-modal-close" onclick="closeVideoModalBtn()" title="Close" type="button">&#x2715;</button>
+    <div class="presentation-video-wrapper">
+      <iframe id="presentation-iframe" src="" allowfullscreen frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+
 <script>
+function openVideoModal(pubId, driveUrl) {
+  var fileIdMatch = driveUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
+  var embedUrl = fileIdMatch
+    ? 'https://drive.google.com/file/d/' + fileIdMatch[1] + '/preview'
+    : driveUrl;
+  document.getElementById('presentation-iframe').src = embedUrl;
+  document.getElementById('presentation-modal').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeVideoModal(event) {
+  if (event.target === document.getElementById('presentation-modal')) {
+    _doCloseModal();
+  }
+}
+
+function closeVideoModalBtn() {
+  _doCloseModal();
+}
+
+function _doCloseModal() {
+  document.getElementById('presentation-iframe').src = '';
+  document.getElementById('presentation-modal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') _doCloseModal();
+});
+
 function toggleBibtex(pubId) {
   const container = document.getElementById('bibtex-' + pubId);
   if (container.style.display === 'none') {
@@ -289,6 +336,88 @@ function copyBibtexContent(pubId) {
     border-color: #229954;
     box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
   }
+}
+
+/* Presentation Button - Light Mode (Outlined) */
+.presentation-btn {
+  background: transparent !important;
+  color: #1a8fc1 !important;
+  border: 2px solid #1a8fc1 !important;
+  text-decoration: none !important;
+}
+
+.presentation-btn:hover {
+  background: rgba(26, 143, 193, 0.1) !important;
+  box-shadow: 0 4px 12px rgba(26, 143, 193, 0.2);
+}
+
+/* Presentation Button - Dark Mode (Solid) */
+@media (prefers-color-scheme: dark) {
+  .presentation-btn {
+    background: #1a8fc1 !important;
+    color: #ffffff !important;
+    border: 1px solid #1a8fc1 !important;
+    text-decoration: none !important;
+  }
+
+  .presentation-btn:hover {
+    background: #1572a0 !important;
+    border-color: #1572a0 !important;
+    box-shadow: 0 4px 12px rgba(26, 143, 193, 0.3);
+  }
+}
+
+/* Presentation Video Modal */
+.presentation-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.presentation-modal-box {
+  position: relative;
+  width: 90vw;
+  max-width: 860px;
+  background: #111827;
+  border-radius: 10px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  border: 1px solid rgba(26, 143, 193, 0.3);
+}
+
+.presentation-modal-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  background: transparent;
+  border: none;
+  color: #aaa;
+  font-size: 1.3rem;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.presentation-modal-close:hover {
+  color: #fff;
+}
+
+.presentation-video-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+}
+
+.presentation-video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* BibTeX Button - Light Mode (Outlined) */

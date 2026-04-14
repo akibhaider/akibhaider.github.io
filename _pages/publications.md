@@ -18,13 +18,14 @@ Comment Classification"
    arxiv="http://arxiv.org/abs/2603.03959"
    doi="https://doi.org/10.1145/3786164.3794837"
    source="https://github.com/akibhaider/LoRA-MME-Code-Comment-Classification"
+   presentation="https://drive.google.com/file/d/11b-wPbunSQw7JsNYQGRQ52nk94_LEtRV/view?usp=sharing"
 %}
 
 {% include publication_card.html
    id="pub2"
    img="/images/pfin-midl.png"
    title="Probabilistic Feature Imputation and Uncertainty-Aware Multimodal Federated Aggregation"
-   authors="Nafis Fuad Shahid, Md Akib Haider, Maroof Ahmed, Saidur Rahman Sagor, Aashnan Rahman, Md Azam Hossain"
+   authors="Nafis Fuad Shahid, Md Akib Haider, Maroof Ahmed, Md Saidur Rahman, Aashnan Rahman, Md Azam Hossain"
    venue="Medical Imaging with Deep Learning, Taipei, Taiwan"
    source="https://github.com/NafisFuadShahid/PFIN-UQAVG"
 %}
