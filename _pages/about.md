@@ -11,7 +11,7 @@ redirect_from:
 ![Illustration of combining vision and language modalities](/images/vlm.png){: .align-right width="237px"}
 
 <div class="container">
-    I'm an undergraduate student at Islamic University of Technology (IUT). Currently I am affiliated with the <a href="https://cse.iutoic-dhaka.edu/ssl">Computer Vision Lab (CV)</a> research group of IUT, working on my undergraduate thesis under the supervision of <a href="https://apps.ualberta.ca/directory/person/kushol">Dr Rafsanjany Kushol</a>.
+    I'm an undergraduate student at Islamic University of Technology (IUT). Currently I am affiliated with the <a href="https://cse.iutoic-dhaka.edu/ssl">Computer Vision Lab (CV)</a> research group of IUT, working on my undergraduate thesis under the supervision of <a href="https://apps.ualberta.ca/directory/person/kushol">Dr Rafsanjany Kushol</a>, and <a href="https://scholar.google.com/citations?user=LIl1Y-0AAAAJ&hl=en">Dr Md. Hasanul Kabir</a>.
     <br><br>
     My research interest lies in Software Engineering, Software/Systems for Healthcare, and Deep Learning. 
     <br><br>
