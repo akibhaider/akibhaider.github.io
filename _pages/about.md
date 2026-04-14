@@ -13,7 +13,7 @@ redirect_from:
 <div class="container">
     I'm an undergraduate student at Islamic University of Technology (IUT). Currently I am affiliated with the <a href="https://cse.iutoic-dhaka.edu/ssl">Computer Vision Lab (CV)</a> research group of IUT, working on my undergraduate thesis under the supervision of <a href="https://apps.ualberta.ca/directory/person/kushol">Dr Rafsanjany Kushol</a>.
     <br><br>
-    My research interest lies in Medical Image Processing, Computer Vision, Vision Language Models and Deep Learning, Multimodal Large Language Models and Reinforcement Learning. At present, I am working on Ultra-Low to High Field MRI image processing techniques.
+    My research interest lies in Software Engineering, Software/Systems for Healthcare, and Deep Learning. 
     <br><br>
     Some people in academia that I follow/look up to — <br>
     <a href="https://karpathy.ai/">Andrej Karpathy</a>, 
@@ -28,8 +28,7 @@ redirect_from:
     <a href="https://scholar.google.com/citations?user=6dP660cAAAAJ&hl=en">Jiaming Song</a>,
     <a href="https://scholar.google.com/citations?user=wsGvgA8AAAAJ&hl=en">Noam Shazeer</a>,
     <a href="https://scholar.google.com/citations?user=oR9sCGYAAAAJ&hl=en">Ashish Vaswani</a>, 
-    <a href="https://scholar.google.com/citations?user=0pOgVVAAAAAJ&hl=en">Prafulla Dhariwal</a>,
-    <a href="https://scholar.google.com/citations?user=KHswVgsAAAAJ&hl=en">Kh Tohidul ISLAM</a>
+    <a href="https://scholar.google.com/citations?user=0pOgVVAAAAAJ&hl=en">Prafulla Dhariwal</a>
 
 </div>
 
