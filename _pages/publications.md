@@ -19,6 +19,16 @@ Comment Classification"
    doi="https://doi.org/10.1145/3786164.3794837"
    source="https://github.com/akibhaider/LoRA-MME-Code-Comment-Classification"
    presentation="https://drive.google.com/file/d/11b-wPbunSQw7JsNYQGRQ52nk94_LEtRV/view?usp=sharing"
+   bibtex="@misc{haider2026lorammemultimodelensembleloratuned,
+      title={LoRA-MME: Multi-Model Ensemble of LoRA-Tuned Encoders for Code Comment Classification},
+      author={Md Akib Haider and Ahsan Bulbul and Nafis Fuad Shahid and Aimaan Ahmed and Mohammad Ishrak Abedin},
+      year={2026},
+      eprint={2603.03959},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      doi={https://doi.org/10.1145/3786164.3794837},
+      url={https://arxiv.org/abs/2603.03959},
+}"
 %}
 
 {% include publication_card.html
@@ -27,22 +37,19 @@ Comment Classification"
    title="Probabilistic Feature Imputation and Uncertainty-Aware Multimodal Federated Aggregation"
    authors="Nafis Fuad Shahid, Md Akib Haider, Maroof Ahmed, Md Saidur Rahman, Aashnan Rahman, Md Azam Hossain"
    venue="Medical Imaging with Deep Learning, Taipei, Taiwan"
+   arxiv="https://arxiv.org/abs/2604.12970"
    source="https://github.com/NafisFuadShahid/PFIN-UQAVG"
+   bibtex="@misc{shahid2026probabilisticfeatureimputationuncertaintyaware,
+      title={Probabilistic Feature Imputation and Uncertainty-Aware Multimodal Federated Aggregation},
+      author={Nafis Fuad Shahid and Maroof Ahmed and Md Akib Haider and Saidur Rahman Sagor and Aashnan Rahman and Md Azam Hossain},
+      year={2026},
+      eprint={2604.12970},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2604.12970},
+}"
 %}
 
-<!-- Add more publications below following the same format -->
-<!-- 
-{% include publication_card.html
-   id="pub2"
-   title="Your Paper Title Here"
-   authors="Author Names"
-   venue="Conference or Journal Name"
-   arxiv="https://arxiv.org/abs/..."
-   doi="https://doi.org/..."
-   source="https://github.com/..."
-   bibtex="@article{...}"
-%}
--->
 
 <style>
 .publications-intro {

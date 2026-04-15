@@ -19,7 +19,8 @@
           </a>
         {% endif %}
 
-        {% if include.doi %}
+        {% comment %}DOI button hidden until activated{% endcomment %}
+        {% if false and include.doi %}
           <a href="{{ include.doi }}" target="_blank" rel="noopener noreferrer" class="pub-btn doi-btn" title="View DOI">
             <i class="ai ai-doi"></i>
             <span>DOI</span>
