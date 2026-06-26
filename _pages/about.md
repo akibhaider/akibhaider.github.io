@@ -13,7 +13,7 @@ redirect_from:
 <div class="container">
     I'm an undergraduate student at Islamic University of Technology (IUT). Currently I am affiliated with the <a href="https://cse.iutoic-dhaka.edu/ssl">Computer Vision Lab (CV)</a> research group of IUT, working on my undergraduate thesis under the supervision of <a href="https://apps.ualberta.ca/directory/person/kushol">Dr Rafsanjany Kushol</a>, and <a href="https://scholar.google.com/citations?user=LIl1Y-0AAAAJ&hl=en">Dr Md. Hasanul Kabir</a>.
     <br><br>
-    My research interest lies in Software Engineering, Software/Systems for Healthcare, and Deep Learning. 
+    My research interest lies in Deep Learning, Computer Vision and Human-Centric AI.
     <br><br>
     Some people in academia that I follow/look up to — <br>
     <a href="https://karpathy.ai/">Andrej Karpathy</a>, 
@@ -28,8 +28,9 @@ redirect_from:
     <a href="https://scholar.google.com/citations?user=6dP660cAAAAJ&hl=en">Jiaming Song</a>,
     <a href="https://scholar.google.com/citations?user=wsGvgA8AAAAJ&hl=en">Noam Shazeer</a>,
     <a href="https://scholar.google.com/citations?user=oR9sCGYAAAAJ&hl=en">Ashish Vaswani</a>, 
-    <a href="https://scholar.google.com/citations?user=0pOgVVAAAAAJ&hl=en">Prafulla Dhariwal</a>
-
+    <a href="https://scholar.google.com/citations?user=0pOgVVAAAAAJ&hl=en">Prafulla Dhariwal</a>,
+    <a href="https://scholar.google.com/citations?user=6dskOSUAAAAJ&hl=en">Christopher Olah</a>,
+    <a href="https://scholar.google.com/citations?user=GLnX3MkAAAAJ&hl=en">Neel Nanda</a>
 </div>
 
 <br><br>

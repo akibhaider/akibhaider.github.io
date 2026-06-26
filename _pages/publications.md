@@ -38,6 +38,7 @@ Comment Classification"
    authors="Nafis Fuad Shahid, Md Akib Haider, Maroof Ahmed, Md Saidur Rahman, Aashnan Rahman, Md Azam Hossain"
    venue="Medical Imaging with Deep Learning, Taipei, Taiwan"
    arxiv="https://arxiv.org/abs/2604.12970"
+   poster="/files/midl26_poster.pdf"
    source="https://github.com/NafisFuadShahid/PFIN-UQAVG"
    bibtex="@misc{shahid2026probabilisticfeatureimputationuncertaintyaware,
       title={Probabilistic Feature Imputation and Uncertainty-Aware Multimodal Federated Aggregation},
