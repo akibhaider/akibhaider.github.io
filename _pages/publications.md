@@ -52,12 +52,10 @@ author_profile: true
 {% include publication_card.html
    id="pub4"
    img="/images/lora-mme-nlbse2.png"
-   title="LoRA-MME: Multi-Model Ensemble of LoRA-Tuned Encoders for Code
-Comment Classification"
+   title="LoRA-MME: Multi-Model Ensemble of LoRA-Tuned Encoders for Code Comment Classification"
    authors="Md Akib Haider, Ahsan Bulbul, Nafis Fuad Shahid, Aimaan Ahmed, and Mohammad Ishrak Abedin"
    venue="5th International Workshop on Natural Language-based Software Engineering, co-located with 48th International Conference on Software Engineering (ICSE'26), Rio de Janeiro, Brazil"
-   arxiv="http://arxiv.org/abs/2603.03959"
-   doi="https://doi.org/10.1145/3786164.3794837"
+   Paper="https://camps.aptaracorp.com//ACM_PMS/PMS/ACM/NLBSE26/8/f35a467c-fc38-11f0-aa9c-16ffd757ba29/OUT/nlbse26-8.html"
    source="https://github.com/akibhaider/LoRA-MME-Code-Comment-Classification"
    presentation="https://drive.google.com/file/d/11b-wPbunSQw7JsNYQGRQ52nk94_LEtRV/view?usp=sharing"
    bibtex="@misc{haider2026lorammemultimodelensembleloratuned,
