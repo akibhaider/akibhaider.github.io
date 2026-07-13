@@ -67,6 +67,13 @@
             <span>Poster</span>
           </a>
         {% endif %}
+
+        <button class="pub-share-btn" onclick="copyPubLink('{{ include.id }}')" title="Copy link to this publication" type="button" id="share-{{ include.id }}">
+          <svg width="16" height="16" fill="none" stroke="#40bfff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+            <path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
@@ -124,6 +131,16 @@ function _doCloseModal() {
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') _doCloseModal();
 });
+
+function copyPubLink(pubId) {
+  const url = window.location.origin + window.location.pathname + '#' + pubId;
+  navigator.clipboard.writeText(url);
+  const btn = document.getElementById('share-' + pubId);
+  btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#40bfff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+  setTimeout(function() {
+    btn.innerHTML = '<svg width="16" height="16" fill="none" stroke="#40bfff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>';
+  }, 1200);
+}
 
 function toggleBibtex(pubId) {
   const container = document.getElementById('bibtex-' + pubId);
@@ -611,6 +628,25 @@ function copyBibtexContent(pubId) {
   padding: 1rem;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Share/link button */
+.pub-share-btn {
+  background: transparent !important;
+  border: none !important;
+  cursor: pointer;
+  padding: 0.45rem 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: transform 0.2s ease, background 0.2s ease;
+  margin-left: 0.25rem;
+}
+
+.pub-share-btn:hover {
+  transform: scale(1.15);
+  background: rgba(64, 191, 255, 0.1) !important;
 }
 
 /* LaTeX styling for BibTeX label */
