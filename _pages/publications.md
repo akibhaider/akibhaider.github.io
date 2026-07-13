@@ -10,6 +10,47 @@ author_profile: true
 
 {% include publication_card.html
    id="pub1"
+   img="/images/BMVC26_ptpc.png"
+   title="PTPC: Two-Stage Patch-Token Prototype Calibration for Few-Shot Object Detection"
+   authors="Md Tanvir Hossain Saikat, Md Hasanul Kabir, Md Akib Haider"
+   pdf="/files/BMVC26_PTPC_FSOD.pdf"
+%}
+
+{% include publication_card.html
+   id="pub2"
+   img="/images/BMVC26_tric_qpr.png"
+   title="Tri-Level Calibration for Training-Free Few-Shot Class-Incremental Learning with Label-Free Query Prototype Rectification"
+   authors="Md Akib Haider, Md Tanvir Hossain Saikat, Md Hasanul Kabir"
+   pdf="/files/BMVC26_Tric_QPR_FSCIL.pdf"
+%}
+
+{% include publication_card.html
+   id="pub3"
+   img="/images/pfin-midl.png"
+   title="Probabilistic Feature Imputation and Uncertainty-Aware Multimodal Federated Aggregation"
+   authors="Nafis Fuad Shahid, Md Akib Haider, Maroof Ahmed, Md Saidur Rahman, Aashnan Rahman, Md Azam Hossain"
+   venue="Medical Imaging with Deep Learning, Taipei, Taiwan"
+   Paper="https://proceedings.mlr.press/v315/shahid26a.html"
+   poster="/files/midl26_poster.pdf"
+   source="https://github.com/NafisFuadShahid/PFIN-UQAVG"
+   bibtex="@InProceedings{pmlr-v315-shahid26a,
+  title = 	 {Probabilistic Feature Imputation and Uncertainty-Aware Multimodal Federated Aggregation},
+  author =       {Shahid, Nafis Fuad and Ahmed, Maroof and Haider, Md Akib and Sagor, Saidur Rahman and Rahman, Aashnan and Hossain, Md Azam},
+  booktitle = 	 {Proceedings of The 9th International Conference on Medical Imaging with Deep Learning},
+  pages = 	 {3593--3607},
+  year = 	 {2026},
+  editor = 	 {Huo, Yuankai and Gao, Mingchen and Kuo, Chang-Fu and Jin, Yueming and Deng, Ruining},
+  volume = 	 {315},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {08--10 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v315/main/assets/shahid26a/shahid26a.pdf},
+  url = 	 {https://proceedings.mlr.press/v315/shahid26a.html}
+}"
+%}
+
+{% include publication_card.html
+   id="pub4"
    img="/images/lora-mme-nlbse2.png"
    title="LoRA-MME: Multi-Model Ensemble of LoRA-Tuned Encoders for Code
 Comment Classification"
@@ -28,26 +69,6 @@ Comment Classification"
       primaryClass={cs.SE},
       doi={https://doi.org/10.1145/3786164.3794837},
       url={https://arxiv.org/abs/2603.03959},
-}"
-%}
-
-{% include publication_card.html
-   id="pub2"
-   img="/images/pfin-midl.png"
-   title="Probabilistic Feature Imputation and Uncertainty-Aware Multimodal Federated Aggregation"
-   authors="Nafis Fuad Shahid, Md Akib Haider, Maroof Ahmed, Md Saidur Rahman, Aashnan Rahman, Md Azam Hossain"
-   venue="Medical Imaging with Deep Learning, Taipei, Taiwan"
-   arxiv="https://arxiv.org/abs/2604.12970"
-   poster="/files/midl26_poster.pdf"
-   source="https://github.com/NafisFuadShahid/PFIN-UQAVG"
-   bibtex="@misc{shahid2026probabilisticfeatureimputationuncertaintyaware,
-      title={Probabilistic Feature Imputation and Uncertainty-Aware Multimodal Federated Aggregation},
-      author={Nafis Fuad Shahid and Maroof Ahmed and Md Akib Haider and Saidur Rahman Sagor and Aashnan Rahman and Md Azam Hossain},
-      year={2026},
-      eprint={2604.12970},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV},
-      url={https://arxiv.org/abs/2604.12970},
 }"
 %}
 

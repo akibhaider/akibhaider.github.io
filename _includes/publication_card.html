@@ -12,6 +12,20 @@
       <div class="publication-authors">{{ include.authors }}</div>
       
       <div class="publication-buttons">
+        {% if include.pdf %}
+          <a href="{{ include.pdf }}" target="_blank" rel="noopener noreferrer" class="pub-btn pdf-btn" title="View PDF">
+            <i class="fa fa-file-pdf-o"></i>
+            <span>PDF</span>
+          </a>
+        {% endif %}
+
+        {% if include.Paper %}
+          <a href="{{ include.Paper }}" target="_blank" rel="noopener noreferrer" class="pub-btn arxiv-btn" title="View paper">
+            <i class="fa fa-book"></i>
+            <span>Paper</span>
+          </a>
+        {% endif %}
+
         {% if include.arxiv %}
           <a href="{{ include.arxiv }}" target="_blank" rel="noopener noreferrer" class="pub-btn arxiv-btn" title="Open on arXiv">
             <i class="fa fa-file-pdf-o"></i>
@@ -248,6 +262,35 @@ function copyBibtexContent(pubId) {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* PDF Button - Light Mode (Outlined) */
+.pdf-btn {
+  background: transparent !important;
+  color: #cc0000 !important;
+  border: 2px solid #cc0000 !important;
+  text-decoration: none !important;
+}
+
+.pdf-btn:hover {
+  background: rgba(204, 0, 0, 0.1) !important;
+  box-shadow: 0 4px 12px rgba(204, 0, 0, 0.2);
+}
+
+/* PDF Button - Dark Mode (Solid) */
+@media (prefers-color-scheme: dark) {
+  .pdf-btn {
+    background: #cc0000 !important;
+    color: #ffffff !important;
+    border: 1px solid #cc0000 !important;
+    text-decoration: none !important;
+  }
+
+  .pdf-btn:hover {
+    background: #a30000 !important;
+    border-color: #a30000 !important;
+    box-shadow: 0 4px 12px rgba(204, 0, 0, 0.3);
+  }
 }
 
 /* arXiv Button - Light Mode (Outlined) */
