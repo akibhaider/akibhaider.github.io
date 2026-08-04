@@ -6,11 +6,18 @@ author_profile: true
 ---
 
 {% include achievements_card.html
+   id="10"
+   img="/images/10_iut_iupc.png"
+   title="12th National ICT Fest IUPC 2026 at IUT"
+   desc="Ranked 27th in onsite contest (3rd in IUT)"
+%}
+
+{% include achievements_card.html
    id="1"
    date="Nov 16 - Nov 21, 2025"
    img="/images/9_sc25.jpeg"
    title="ACM SIGHPC Immersion Travel Grantee"
-   desc="Visited St. Louis, Missouri, USA to attend the SC25 conference. Lightning talk on &quot;Data, Model, Tensor parallelism in ultra low to high field MRI translation&quot;. Met Sidney Fernbach Memorial Awardee <a href='https://scholar.google.com/citations?user=dts9eDUAAAAJ&hl=en' target='_blank'>Dr. Ewa Deelman</a> and renowned author-entrepreneur <a href='https://tkspeaks.com/' target='_blank'>Thomas Koulopoulos</a>. <a href='https://www.linkedin.com/posts/akib-haider-1252051ab_thats-a-wrap-to-this-years-sc-conference-activity-7397835020628877312-E-A7?utm_source=share&utm_medium=member_android&rcm=ACoAADD5am0B9jxcAFMtDMy5KFbbtb8_b72Ibq8' target='_blank'>Details</a>"
+   desc="Visited St. Louis, Missouri, USA to attend the SC25 conference. Lightning talk on &quot;Data, Model, Tensor parallelism in ultra low to high field MRI translation&quot;. Met Sidney Fernbach Memorial Awardee <a href='https://scholar.google.com/citations?user=dts9eDUAAAAJ&hl=en' target='_blank'>Dr. Ewa Deelman</a> and renowned author-entrepreneur <a href='https://tkspeaks.com/' target='_blank'>Thomas Koulopoulos</a>. <a href='https://www.linkedin.com/posts/akib-haider-1252051ab_thats-a-wrap-to-this-years-sc-conference-activity-7397835020628877312-E-A7?utm_source=share&utm_medium=member_android&rcm=ACoAADD5am0B9jxcAFMtDMy5KFbbtb8_b72Ibq8' target='_blank'>  [Details]</a>"
 %}
 
 {% include achievements_card.html
@@ -64,7 +71,7 @@ author_profile: true
    id="8"
    date="May 1, 2024"
    img="/images/5_iut_iupc.png"
-   title="Inter University Programming Contest 2024"
+   title="11th National ICT Fest IUPC 2026 at IUT"
    desc="Ranked 52th in onsite contest (4th in IUT)"
 %}
 
