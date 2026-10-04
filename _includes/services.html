@@ -1,0 +1,17 @@
+{% if site.data.services and site.data.services.size > 0 %}
+<section class="home-services" id="services">
+  <h2 class="home-services__title">Services</h2>
+  <div class="home-services__list">
+    {% for group in site.data.services %}
+      <article class="home-services__row">
+        <div class="home-services__label">{{ group.label }}</div>
+        <div class="home-services__lines">
+          {% for line in group.lines %}
+            <p>{{ line | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+          {% endfor %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

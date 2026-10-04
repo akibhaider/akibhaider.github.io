@@ -1,0 +1,32 @@
+{% if site.data.projects and site.data.projects.size > 0 %}
+<section class="home-projects" id="projects">
+  <h2 class="home-projects__title">Selected Projects</h2>
+
+  <div class="home-pubs__list">
+    {% for project in site.data.projects %}
+      {% assign pid = "home-" | append: project.id %}
+      <article class="home-pub" id="{{ pid }}">
+        {% if project.img %}
+          <div class="home-pub__media"><img src="{{ project.img | relative_url }}" alt="{{ project.title | escape }}" loading="lazy"></div>
+        {% endif %}
+
+        <div class="home-pub__body">
+          <h3 class="home-pub__title">{{ project.title }}</h3>
+          {% if project.tech %}<p class="home-pub__venue"><em>{{ project.tech }}</em></p>{% endif %}
+          {% if project.desc %}<p class="home-pub__authors">{{ project.desc | markdownify | remove: "<p>" | remove: "</p>" }}</p>{% endif %}
+
+          <div class="home-pub__links">
+            {% if project.github %}
+              <a class="pub-pill pub-pill--code" href="{{ project.github }}" target="_blank" rel="noopener noreferrer" title="View source code"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+            {% endif %}
+            {% if project.youtube %}
+              <a class="pub-pill pub-pill--video" href="{{ project.youtube }}" target="_blank" rel="noopener noreferrer" title="Watch on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i>Video</a>
+            {% endif %}
+            <button class="pub-pill pub-pill--share" type="button" title="Copy link to this project" aria-label="Copy link to this project" onclick="homeCopyLink('{{ pid }}', this)"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

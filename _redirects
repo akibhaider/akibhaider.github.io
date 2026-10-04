@@ -1,4 +1,3 @@
 # Handle source map requests
 /*.map  /404.html 404
 /.well-known/*  /404.html 404
-/achievements/*.vue.map  /404.html 404 

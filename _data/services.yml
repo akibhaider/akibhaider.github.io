@@ -1,0 +1,12 @@
+# Home page "Services" section. Each group has a `label` and a list of `lines` (Markdown).
+- label: "Mentoring"
+  lines:
+    - "**Instructor**, IUT ACM Community - for sophomore competitive programming aspirants"
+- label: "Problem Setting"
+  lines:
+    - "**Intra-IUT Junior Programming Contest 2025** - [problem set](https://github.com/ir-rafio/IJPC-2025-Problemset)"
+    - "**Abid Hasan Intra University Programming Contest 2025** - [problem set](https://github.com/ir-rafio/AHIUPC-2025-Problemset)"
+- label: "Organizing"
+  lines:
+    - "**Event Head** Intra-University Junior Programming Contest 2025- , organized by IUT"
+

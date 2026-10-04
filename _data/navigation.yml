@@ -1,37 +1,22 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# Top bar. `brand` is the left-most link (scrolls to the top of the home page).
+# `main` links are shown on the right, in order. In-page links use /#section-id.
+# Set `new_tab: true` to open a link in a new browser tab.
+
+brand:
+  title: "About"
+  url: /#home
 
 main:
+  - title: "News"
+    url: /#news
   - title: "Publications"
-    url: /publications/
-
-  # - title: "Talks"
-  #   url: /talks/    
-  - title: "Chronicles"
-    url: /achievements/
-
-
+    url: /#publications
+  - title: "Awards"
+    url: /#awards
+  - title: "Services"
+    url: /#services
   - title: "Projects"
-    url: /projects/  
-
-  # - title: "Teaching"
-  #   url: /teaching/    
-
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
+    url: /#projects
   - title: "CV"
     url: /files/resume.pdf
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  # - title: "Guide"
-  #   url: /markdown/
+    new_tab: true

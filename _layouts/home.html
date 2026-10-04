@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% include base_path %}
+{% assign author = site.author %}
+
+{% include home-share-script.html %}
+
+<div id="main" role="main">
+  <section class="home-hero" id="home">
+    <div class="home-hero__text">
+      <h1 class="page__title">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+      <div class="home-hero__intro">
+        {{ content }}
+      </div>
+    </div>
+
+    <aside class="home-hero__profile">
+      <a class="home-hero__photo" href="{{ author.avatar | prepend: '/images/' | prepend: base_path }}" aria-label="Open profile photo">
+        <img src="{{ author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ author.name }}">
+      </a>
+
+      <h3 class="author__name">{{ author.name }}</h3>
+
+      <ul class="social-icons home-hero__links">
+        {% if author.location %}<li><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>{% endif %}
+        {% comment %}{% if author.employer %}<li><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>{% endif %}{% endcomment %}
+        <li><a href="https://akibhaider.github.io"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>Website</a></li>
+        <li><a href="mailto:haiderakib5@gmail.com"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=s2xGwOIAAAAJ&hl=en"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+        {% comment %}{% if author.github %}<li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>GitHub</a></li>{% endif %}{% endcomment %}
+        <li><a href="https://www.linkedin.com/in/akib-haider-1252051ab/"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+        {% comment %}{% if author.youtube %}<li><a href="https://www.youtube.com/@{{ author.youtube }}"><i class="fab fa-fw fa-youtube icon-pad-right" aria-hidden="true"></i>YouTube</a></li>{% endif %}{% endcomment %}
+      </ul>
+    </aside>
+  </section>
+
+  {% include news.html %}
+  {% include home-publications.html %}
+  {% include awards.html %}
+  {% include services.html %}
+  {% include projects.html %}
+
+  {% if page.visitor_map %}
+    {% include visitor-map.html %}
+  {% endif %}
+</div>

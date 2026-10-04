@@ -1,0 +1,541 @@
+/* ==========================================================================
+   HOME PAGE (two-column hero: text left, photo + profile links right)
+   ========================================================================== */
+
+.home-hero {
+  scroll-margin-top: 78px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px;
+  gap: 3rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1rem;
+
+  &__intro {
+    margin-top: 1.25rem;
+    font-size: 1.05em;
+
+    p {
+      margin: 0 0 1.2em;
+    }
+  }
+
+  &__profile {
+    text-align: center;
+
+    .author__name {
+      margin: 1rem 0 0.75rem;
+    }
+  }
+
+  &__photo {
+    display: block;
+    padding: 8px;
+    border: 1px solid var(--global-border-color);
+    border-radius: 16px;
+    background: var(--global-bg-color);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  &__links {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    list-style: none;
+    font-size: 0.9em;
+
+    li {
+      margin: 0.35rem 0;
+      white-space: nowrap;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-link-color);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.visitor-map {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+
+  &__frame {
+    border: 2px solid #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+
+    img {
+      display: block;
+      width: 550px;
+      max-width: 90vw;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    &__profile {
+      justify-self: center;
+      width: min(200px, 70vw);
+    }
+  }
+}
+
+/* Highlighted call-out (e.g. "actively seeking PhD opportunities").
+   Colors are tuned per theme so contrast stays >= 4.5:1 in both. */
+:root {
+  --note-color: #a01c16;
+  --note-bg: rgba(220, 38, 38, 0.12);
+  --note-border: #d93025;
+}
+
+html[data-theme="dark"] {
+  --note-color: #ffd0cb;
+  --note-bg: rgba(255, 82, 82, 0.22);
+  --note-border: #ff6b60;
+}
+
+.home-hero__intro .seeking-note {
+  display: inline-block;
+  padding: 0.2em 0.7em;
+  border-left: 4px solid var(--note-border);
+  border-radius: 4px;
+  background: var(--note-bg);
+  color: var(--note-color);
+  font-weight: 700;
+}
+
+/* News */
+:root {
+  --news-hover-bg: rgba(82, 173, 200, 0.12);
+}
+
+html[data-theme="dark"] {
+  --news-hover-bg: rgba(255, 255, 255, 0.08);
+}
+
+.home-news,
+.home-pubs,
+.home-awards,
+.home-services,
+.home-projects {
+  scroll-margin-top: 78px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 0.5rem;
+  border-top: 1px solid var(--global-border-color);
+
+  &__title {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
+    font-size: 1.5em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--global-link-color), transparent);
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 0.7rem 0.6rem;
+    border-bottom: 1px solid var(--global-border-color);
+    border-radius: 6px;
+    transition: transform 200ms ease, background-color 200ms ease;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      background: var(--news-hover-bg);
+      transform: translateX(4px);
+    }
+  }
+
+  &__date {
+    font-weight: 700;
+    color: var(--global-link-color);
+    white-space: nowrap;
+  }
+
+  &__text strong {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-news__item,
+  .home-awards__item {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-news__item {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+/* Publications (cards + pill buttons, modeled on jyzhang1208.github.io) */
+:root {
+  --pub-card-bg: rgba(255, 255, 255, 0.7);
+  --pub-card-shadow: 0 12px 36px rgba(60, 60, 60, 0.08);
+  --pub-card-shadow-hover: 0 18px 45px rgba(60, 60, 60, 0.14);
+  --pub-pill-bg: #fff;
+  --pub-media-bg: #fff;
+
+  /* Button colors: text/border >= 4.5:1 on the pill background, rest and hover */
+  --pb-pdf: #b3261e;
+  --pb-paper: #0b5cad;
+  --pb-arxiv: #a8201a;
+  --pb-code: #1b6e3f;
+  --pb-bibtex: #6f42c1;
+  --pb-media: #0f6a92;
+  --pb-share: #4b5359;
+}
+
+html[data-theme="dark"] {
+  --pub-card-bg: rgba(255, 255, 255, 0.05);
+  --pub-card-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+  --pub-card-shadow-hover: 0 18px 45px rgba(0, 0, 0, 0.35);
+  --pub-pill-bg: rgba(0, 0, 0, 0.25);
+  --pub-media-bg: #fff;
+
+  --pb-pdf: #ffb4ab;
+  --pb-paper: #a8d4ff;
+  --pb-arxiv: #ffb8b2;
+  --pb-code: #8fe8b2;
+  --pb-bibtex: #d6c2fa;
+  --pb-media: #9edcf5;
+  --pb-share: #e1e4e6;
+}
+
+.home-pubs__list {
+  display: grid;
+  gap: 18px;
+}
+
+.home-pub {
+  display: grid;
+  grid-template-columns: 285px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  background: var(--pub-card-bg);
+  box-shadow: var(--pub-card-shadow);
+  scroll-margin-top: 90px;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--global-link-color);
+    box-shadow: var(--pub-card-shadow-hover);
+  }
+
+  &__media {
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid var(--global-border-color);
+    background: var(--pub-media-bg);
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: contain;
+      padding: 8px;
+      transition: transform 320ms ease;
+    }
+  }
+
+  &:hover &__media img {
+    transform: scale(1.035);
+  }
+
+  &__title {
+    margin: 0 0 8px;
+    font-size: 1.05em;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+
+  &__authors,
+  &__venue {
+    margin: 5px 0 0;
+    font-size: 0.95em;
+    line-height: 1.55;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  &__bibtex {
+    grid-column: 1 / -1;
+    padding: 12px 14px;
+    border: 1px solid var(--global-border-color);
+    border-radius: 6px;
+    background: var(--pub-card-bg);
+
+    &[hidden] {
+      display: none;
+    }
+
+    pre {
+      margin: 0;
+      padding: 12px;
+      font-size: 0.75rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      border-radius: 4px;
+      background: var(--pub-pill-bg);
+      color: var(--global-text-color);
+      border: 1px solid var(--global-border-color);
+    }
+  }
+
+  &__bibtex-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    h4 {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/* Pill buttons (links and <button>s share the same look) */
+.pub-pill {
+  --pb: var(--pb-paper);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 3px 12px;
+  border: 1px solid var(--pb);
+  border: 1px solid color-mix(in srgb, var(--pb) 55%, transparent);
+  border-radius: 999px;
+  background: var(--pub-pill-bg);
+  color: var(--pb);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--pb);
+    text-decoration: none;
+    border-color: var(--pb);
+    background: var(--pub-pill-bg);
+    background: color-mix(in srgb, var(--pb) 14%, var(--pub-pill-bg));
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--pb);
+    outline-offset: 2px;
+  }
+
+  i {
+    color: inherit;
+    font-size: 0.9em;
+  }
+
+  &--pdf { --pb: var(--pb-pdf); }
+  &--paper { --pb: var(--pb-paper); }
+  &--arxiv { --pb: var(--pb-arxiv); }
+  &--code { --pb: var(--pb-code); }
+  &--bibtex { --pb: var(--pb-bibtex); }
+  &--media { --pb: var(--pb-media); }
+  &--video { --pb: var(--pb-pdf); }
+  &--share { --pb: var(--pb-share); padding: 3px 10px; }
+}
+
+/* Presentation video modal */
+.home-video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+
+  &[hidden] {
+    display: none;
+  }
+
+  &__box {
+    position: relative;
+    width: 90vw;
+    max-width: 860px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #111827;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+  }
+
+  &__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    z-index: 2;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    line-height: 1;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__frame {
+    position: relative;
+    padding-top: 56.25%;
+
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .home-pub {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+
+    &__media img {
+      aspect-ratio: 16 / 9;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-pub,
+  .home-pub__media img,
+  .pub-pill {
+    transition: none;
+  }
+
+  .home-pub:hover,
+  .home-pub:hover .home-pub__media img,
+  .pub-pill:hover {
+    transform: none;
+  }
+}
+
+/* Services: label column + lines (same hover as news rows) */
+.home-services {
+  &__row {
+    display: grid;
+    grid-template-columns: 11.5rem minmax(0, 1fr);
+    gap: 1rem;
+    padding: 0.7rem 0.6rem;
+    border-bottom: 1px solid var(--global-border-color);
+    border-radius: 6px;
+    transition: transform 200ms ease, background-color 200ms ease;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      background: var(--news-hover-bg);
+      transform: translateX(4px);
+    }
+  }
+
+  &__label {
+    font-weight: 700;
+    color: var(--global-link-color);
+  }
+
+  &__lines p {
+    margin: 0 0 0.45rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-services__row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-awards__item,
+  .home-services__row {
+    transition: none;
+  }
+
+  .home-awards__item:hover,
+  .home-services__row:hover {
+    transform: none;
+  }
+}

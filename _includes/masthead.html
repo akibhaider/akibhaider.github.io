@@ -1,26 +1,16 @@
 {% include base_path %}
 
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+<header class="topbar">
+  <nav class="site-shell nav" aria-label="Primary navigation">
+    <a class="brand" href="{{ site.data.navigation.brand.url | relative_url }}">{{ site.data.navigation.brand.title }}</a>
+    <div class="nav-links">
+      {% for link in site.data.navigation.main %}
+        {% if link.url contains 'http' %}{% assign href = link.url %}{% else %}{% assign href = link.url | relative_url %}{% endif %}
+        <a href="{{ href }}"{% if link.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a>
+      {% endfor %}
+      <button id="theme-toggle" class="nav-theme" type="button" aria-label="Toggle dark and light theme" title="Toggle dark / light theme">
+        <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
+      </button>
     </div>
-  </div>
-</div>
+  </nav>
+</header>

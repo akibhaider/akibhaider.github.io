@@ -64,8 +64,8 @@ $(document).ready(function () {
     }
   });
 
-  // init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({ offset: -65 });
+  // init smooth scroll, this needs to be slightly more than the sticky top bar height (~71px)
+  $("a").smoothScroll({ offset: -78 });
 
   // add lightbox class to all image links
   $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");

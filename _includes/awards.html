@@ -1,0 +1,13 @@
+{% if site.data.awards and site.data.awards.size > 0 %}
+<section class="home-awards" id="awards">
+  <h2 class="home-awards__title">Awards</h2>
+  <div class="home-awards__list">
+    {% for item in site.data.awards %}
+      <article class="home-awards__item">
+        <div class="home-awards__date">{{ item.date }}</div>
+        <div class="home-awards__text">{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

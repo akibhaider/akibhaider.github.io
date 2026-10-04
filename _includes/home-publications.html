@@ -1,0 +1,98 @@
+{% if site.data.publications and site.data.publications.size > 0 %}
+<section class="home-pubs" id="publications">
+  <h2 class="home-pubs__title">Publications</h2>
+
+  <div class="home-pubs__list">
+    {% for pub in site.data.publications %}
+      {% assign pid = "home-" | append: pub.id %}
+      <article class="home-pub" id="{{ pid }}">
+        {% if pub.img %}
+          <div class="home-pub__media"><img src="{{ pub.img | prepend: base_path }}" alt="{{ pub.title | escape }}" loading="lazy"></div>
+        {% endif %}
+
+        <div class="home-pub__body">
+          <h3 class="home-pub__title">{{ pub.title }}</h3>
+          <p class="home-pub__authors">{{ pub.authors | replace: "Md Akib Haider", "<strong>Md Akib Haider</strong>" }}</p>
+          {% if pub.venue %}<p class="home-pub__venue"><em>{{ pub.venue }}</em></p>{% endif %}
+
+          <div class="home-pub__links">
+            {% if pub.pdf %}
+              <a class="pub-pill pub-pill--pdf" href="{{ pub.pdf }}" target="_blank" rel="noopener noreferrer" title="View PDF"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+            {% endif %}
+            {% if pub.Paper %}
+              <a class="pub-pill pub-pill--paper" href="{{ pub.Paper }}" target="_blank" rel="noopener noreferrer" title="View paper"><i class="fa-solid fa-book" aria-hidden="true"></i>Paper</a>
+            {% endif %}
+            {% if pub.arxiv %}
+              <a class="pub-pill pub-pill--arxiv" href="{{ pub.arxiv }}" target="_blank" rel="noopener noreferrer" title="Open on arXiv"><i class="ai ai-arxiv" aria-hidden="true"></i>arXiv</a>
+            {% endif %}
+            {% if pub.source %}
+              <a class="pub-pill pub-pill--code" href="{{ pub.source }}" target="_blank" rel="noopener noreferrer" title="View source code"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
+            {% endif %}
+            {% if pub.bibtex and pub.bibtex != "" %}
+              <button class="pub-pill pub-pill--bibtex" type="button" title="Toggle BibTeX" aria-expanded="false" aria-controls="bibtex-{{ pid }}" onclick="homeToggleBibtex('{{ pid }}', this)"><i class="fa-solid fa-quote-right" aria-hidden="true"></i>BibTeX</button>
+            {% endif %}
+            {% if pub.presentation %}
+              <button class="pub-pill pub-pill--media" type="button" title="Watch presentation" onclick="homeOpenVideo('{{ pub.presentation }}')"><i class="fa-solid fa-circle-play" aria-hidden="true"></i>Presentation</button>
+            {% endif %}
+            {% if pub.poster %}
+              <a class="pub-pill pub-pill--media" href="{{ pub.poster }}" target="_blank" rel="noopener noreferrer" title="View poster"><i class="fa-solid fa-image" aria-hidden="true"></i>Poster</a>
+            {% endif %}
+            <button class="pub-pill pub-pill--share" type="button" title="Copy link to this publication" aria-label="Copy link to this publication" onclick="homeCopyLink('{{ pid }}', this)"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        {% if pub.bibtex and pub.bibtex != "" %}
+          <div class="home-pub__bibtex" id="bibtex-{{ pid }}" hidden>
+            <div class="home-pub__bibtex-head">
+              <h4>BibTeX Citation</h4>
+              <button class="pub-pill pub-pill--paper" type="button" title="Copy BibTeX to clipboard" onclick="homeCopyBibtex('{{ pid }}', this)"><i class="fa-solid fa-quote-left" aria-hidden="true"></i>Cite</button>
+            </div>
+            <pre id="bibtex-text-{{ pid }}">{{ pub.bibtex | escape }}</pre>
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<div id="home-video-modal" class="home-video-modal" hidden onclick="homeCloseVideo(event)">
+  <div class="home-video-modal__box">
+    <button class="home-video-modal__close" type="button" aria-label="Close" onclick="homeCloseVideo()">&#x2715;</button>
+    <div class="home-video-modal__frame"><iframe id="home-video-iframe" src="" allowfullscreen frameborder="0"></iframe></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  window.homeToggleBibtex = function (pid, btn) {
+    var box = document.getElementById('bibtex-' + pid);
+    var open = box.hasAttribute('hidden');
+    if (open) { box.removeAttribute('hidden'); } else { box.setAttribute('hidden', ''); }
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+
+  window.homeCopyBibtex = function (pid, btn) {
+    homeUtil.copyText(document.getElementById('bibtex-text-' + pid).innerText).then(function () {
+      homeUtil.flash(btn, '<i class="fa-solid fa-check" aria-hidden="true"></i>Copied!');
+    });
+  };
+
+  window.homeOpenVideo = function (driveUrl) {
+    var m = driveUrl.match(/\/d\/([a-zA-Z0-9_-]+)/);
+    document.getElementById('home-video-iframe').src = m ? 'https://drive.google.com/file/d/' + m[1] + '/preview' : driveUrl;
+    document.getElementById('home-video-modal').removeAttribute('hidden');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.homeCloseVideo = function (event) {
+    var modal = document.getElementById('home-video-modal');
+    if (event && event.target !== modal) { return; }
+    document.getElementById('home-video-iframe').src = '';
+    modal.setAttribute('hidden', '');
+    document.body.style.overflow = '';
+  };
+
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { window.homeCloseVideo(); } });
+})();
+</script>
+{% endif %}

@@ -1,0 +1,27 @@
+<script>
+(function () {
+  var copyText = function (text) {
+    if (navigator.clipboard && window.isSecureContext) { return navigator.clipboard.writeText(text); }
+    return new Promise(function (resolve) {
+      var ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta); resolve();
+    });
+  };
+
+  // Temporarily swaps a button's content, then restores it.
+  var flash = function (btn, html) {
+    var original = btn.innerHTML;
+    btn.innerHTML = html;
+    setTimeout(function () { btn.innerHTML = original; }, 1500);
+  };
+
+  window.homeUtil = { copyText: copyText, flash: flash };
+
+  window.homeCopyLink = function (id, btn) {
+    copyText(window.location.origin + window.location.pathname + '#' + id).then(function () {
+      flash(btn, '<i class="fa-solid fa-check" aria-hidden="true"></i>');
+    });
+  };
+})();
+</script>
