@@ -10,15 +10,15 @@ redirect_from:
 ---
 
 <p>
-  I have recently completed my undergraduate degree in Computer Science at the Islamic University of Technology (IUT), advised by <a href="https://apps.ualberta.ca/directory/person/kushol">Dr Rafsanjany Kushol</a>, <a href="https://scholar.google.com/citations?user=LIl1Y-0AAAAJ&hl=en">Dr Md. Hasanul Kabir</a> and <a href="https://cse.iutoic-dhaka.edu/profile/reaz-hassan">Reaz Hassan Joarder</a>. I am currently working as a research intern at the University of Illinois Urbana-Champaign (UIUC) under the supervision of <a href=" https://www.sharifasultana.com/">Sharifa Sultana</a>. Our work focuses on building Human-centric, Trustworthy multimodal language models.
+  I have recently completed my undergraduate degree in Computer Science at the Islamic University of Technology (IUT), advised by <a href="https://scholar.google.com/citations?user=LIl1Y-0AAAAJ&hl=en">Dr. Md. Hasanul Kabir</a>, where I worked on <strong>Frozen-Feature Class Incremental Learning</strong> and <strong>Training-Free Few-Shot Object Detection</strong>, and <a href="https://apps.ualberta.ca/directory/person/kushol">Dr. Rafsanjany Kushol</a>, where I worked on <strong>Ultra-Low Field to High Field MRI Image Translation</strong>. I am currently working as a research intern at the University of Illinois Urbana-Champaign (UIUC) under the supervision of <a href="https://www.sharifasultana.com/">Sharifa Sultana</a>. Our work focuses on building human-centric, trustworthy multimodal language models.
 </p>
 
 <p>
-  My broader research goal is to incorporate human brain-like reasoning into Deep Learning models, mitigate biases, and thereby build interpretable and generalizable AI systems for both the digital and physical world. If you would like to discuss my research or potential collaborations further, feel free to reach out to me.
+  My broader research goal is to incorporate human brain-like reasoning into deep learning models, mitigate biases, and thereby build interpretable and generalizable AI systems for both the digital and physical world. If you would like to discuss my research or potential collaborations further, feel free to reach out to me.
 </p>
 
 <p>
-  <strong class="seeking-note">I am actively seeking PhD opportunities for upcoming Fall 2027.</strong>
+  <strong class="seeking-note">I am actively seeking PhD opportunities for Fall 2027.</strong>
 </p>
 <!-- 
 <p>

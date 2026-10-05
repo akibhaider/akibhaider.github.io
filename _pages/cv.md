@@ -19,7 +19,7 @@ Work experience
 ======
 * Spring 2024: Academic Pages Collaborator
   * GitHub University
-  * Duties includes: Updates and improvements to template
+  * Duties include: Updates and improvements to template
   * Supervisor: The Users
 
 * Fall 2015: Research Assistant

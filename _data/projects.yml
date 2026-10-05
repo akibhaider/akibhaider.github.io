@@ -4,12 +4,12 @@
   title: "Bazar Sodai"
   tech: "Flutter Riverpod, Router API, Supabase"
   img: /images/project_ecommerce.png
-  desc: "Cross-platform application prototype for the android version of [Bazar Sodai](https://bazarsodai.co.uk/)."
+  desc: "Cross-platform application prototype for the Android version of [Bazar Sodai](https://bazarsodai.co.uk/)."
   github: https://github.com/akibhaider/ecommerce
 - id: project2
   title: "Better-SIS"
   tech: "Dart, C++, Swift, Python, Firebase"
   img: /images/project_bettersis.png
-  desc: "Student Information System - android version of Islamic University of Technology."
+  desc: "Android version of the Student Information System of Islamic University of Technology."
   github: https://github.com/akibhaider/BetterSIS
   youtube: https://youtu.be/F9-pSOwY53w
