@@ -42,7 +42,7 @@ layout: default
   {% include services.html %}
   {% include projects.html %}
 
-  {% if page.visitor_map %}
-    {% include visitor-map.html %}
-  {% endif %}
 </div>
+{% if page.visitor_map %}
+  {% include visitor-map.html %}
+{% endif %}

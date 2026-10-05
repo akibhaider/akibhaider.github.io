@@ -1,15 +1,10 @@
 {
-	"name": "OOjs UI icon academic-progressive",
+	"name": "Akib Haider",
 	"icons": [
 		{
-			"src": "/images/favicon-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/favicon-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png"
+			"src": "/images/profile_icon.jpg",
+			"sizes": "300x300",
+			"type": "image/jpeg"
 		}
 	]
 }

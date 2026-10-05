@@ -1,6 +1,6 @@
 # Home page "Awards" section. Newest first. `date` is shown as-is; `text` supports Markdown.
 - date: "2026"
-  text: "**2nd** place in the NLBSE Code Comment Classification Challenge at ICSE 2026 (highest F1 of any submission) [paper](https://dl.acm.org/doi/full/10.1145/3786164.3794837)"
+  text: "**2nd** place in the Code Comment Classification Challenge at ICSE 2026 (highest F1 score) [paper](https://dl.acm.org/doi/full/10.1145/3786164.3794837)"
 - date: "2025-26"
   text: "Champion and **Captain** of the University Chess Team"
 - date: "2025"
