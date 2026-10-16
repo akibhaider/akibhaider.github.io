@@ -16,6 +16,9 @@
           {% if pub.venue %}<p class="home-pub__venue"><em>{{ pub.venue }}</em></p>{% endif %}
 
           <div class="home-pub__links">
+            {% if pub.badge %}
+              <span class="pub-pill pub-pill--badge"><i class="fa-solid fa-award" aria-hidden="true"></i>{{ pub.badge }}</span>
+            {% endif %}
             {% if pub.pdf %}
               <a class="pub-pill pub-pill--pdf" href="{{ pub.pdf }}" target="_blank" rel="noopener noreferrer" title="View PDF"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
             {% endif %}

@@ -235,6 +235,7 @@ html[data-theme="dark"] {
   --pb-bibtex: #6f42c1;
   --pb-media: #0f6a92;
   --pb-share: #4b5359;
+  --pb-badge: #a14a00;
 }
 
 html[data-theme="dark"] {
@@ -251,6 +252,7 @@ html[data-theme="dark"] {
   --pb-bibtex: #d6c2fa;
   --pb-media: #9edcf5;
   --pb-share: #e1e4e6;
+  --pb-badge: #ffc078;
 }
 
 .home-pubs__list {
@@ -407,6 +409,23 @@ html[data-theme="dark"] {
   &--media { --pb: var(--pb-media); }
   &--video { --pb: var(--pb-pdf); }
   &--share { --pb: var(--pb-share); padding: 3px 10px; }
+
+  /* Static status badge (not a link): orange tint, no hover motion */
+  &--badge {
+    --pb: var(--pb-badge);
+    border-color: var(--pb);
+    border-color: color-mix(in srgb, var(--pb) 70%, transparent);
+    background: color-mix(in srgb, #ff8a00 16%, var(--pub-pill-bg));
+    cursor: default;
+
+    &:hover,
+    &:focus-visible {
+      background: color-mix(in srgb, #ff8a00 16%, var(--pub-pill-bg));
+      border-color: color-mix(in srgb, var(--pb) 70%, transparent);
+      box-shadow: none;
+      transform: none;
+    }
+  }
 }
 
 /* Presentation video modal */

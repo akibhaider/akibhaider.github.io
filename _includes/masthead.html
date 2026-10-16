@@ -6,6 +6,7 @@
     <div class="nav-links">
       {% for link in site.data.navigation.main %}
         {% if link.url contains 'http' %}{% assign href = link.url %}{% else %}{% assign href = link.url | relative_url %}{% endif %}
+        {% for f in site.static_files %}{% if f.path == link.url %}{% assign ver = f.modified_time | date: '%s' %}{% assign href = href | append: '?v=' | append: ver %}{% endif %}{% endfor %}
         <a href="{{ href }}"{% if link.new_tab %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a>
       {% endfor %}
       <button id="theme-toggle" class="nav-theme" type="button" aria-label="Toggle dark and light theme" title="Toggle dark / light theme">
