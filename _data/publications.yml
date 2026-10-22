@@ -2,7 +2,7 @@
 # Newest first. Optional keys: venue, badge (orange status pill, e.g. "Accepted in WACV"), pdf, Paper, arxiv, source (code), bibtex, presentation (Google Drive video), poster.
 - id: pub1
   title: 'PTPC: Prototype-Based Test-Time Prediction Calibration for Few-Shot Object Detection'
-  authors: Md Tanvir Hossain Saikat, Md Akib Haider, Md Hasanul Kabir
+  authors: Md Tanvir Hossain Saikat, Md Hasanul Kabir, Md Akib Haider
   img: /images/ptpc_wacv.png
   pdf: /files/PTPC.pdf
   badge: Accepted in WACV
