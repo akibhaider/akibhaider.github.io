@@ -1,6 +1,6 @@
 # Home page "News" section. Newest first. `date` is shown as-is; `text` supports Markdown.
 - date: "2026/10"
-  text: "Two of my 2nd authored papers have been accepted at WACV 2027. See you in Florida 🌐🪄"
+  text: "Two of my papers have been accepted at WACV 2027. See you in Florida 🌐🪄"
 - date: "2026/09"
   text: "Graduated from IUT 🎓 with CGPA 3.91/4.00"
 - date: "2026/07"
