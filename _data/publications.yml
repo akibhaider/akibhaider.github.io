@@ -11,7 +11,7 @@
   title: 'Diagnosing Prototype Estimation in Frozen-Feature Few-Shot Class-Incremental Learning: Training-Free Geometry Selection and Unlabeled-Query Prototype Rectification'
   authors: Md Tanvir Hossain Saikat, Md Akib Haider, Md Tahmid Islam Tomal, Md Hasanul Kabir
   img: /images/tqpr_wacv.png
-  pdf: /files/shrinksel.pdf
+  arxiv: https://arxiv.org/pdf/2611.00022
   badge: Accepted in WACV
 
 - id: pub3
