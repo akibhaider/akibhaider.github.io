@@ -20,7 +20,7 @@
               <span class="pub-pill pub-pill--badge"><i class="fa-solid fa-award" aria-hidden="true"></i>{{ pub.badge }}</span>
             {% endif %}
             {% if pub.pdf %}
-              <a class="pub-pill pub-pill--pdf" href="{{ pub.pdf }}" target="_blank" rel="noopener noreferrer" title="View PDF"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>PDF</a>
+              <a class="pub-pill pub-pill--pdf" href="{{ pub.pdf }}" target="_blank" rel="noopener noreferrer" title="View PDF"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>{{ pub.pdf_label | default: 'PDF' }}</a>
             {% endif %}
             {% if pub.Paper %}
               <a class="pub-pill pub-pill--paper" href="{{ pub.Paper }}" target="_blank" rel="noopener noreferrer" title="View paper"><i class="fa-solid fa-book" aria-hidden="true"></i>Paper</a>
@@ -43,7 +43,6 @@
             {% if pub.poster %}
               <a class="pub-pill pub-pill--media" href="{{ pub.poster }}" target="_blank" rel="noopener noreferrer" title="View poster"><i class="fa-solid fa-image" aria-hidden="true"></i>Poster</a>
             {% endif %}
-            <button class="pub-pill pub-pill--share" type="button" title="Copy link to this publication" aria-label="Copy link to this publication" onclick="homeCopyLink('{{ pid }}', this)"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i></button>
           </div>
         </div>
 

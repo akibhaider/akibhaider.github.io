@@ -22,14 +22,6 @@
 
   window.homeUtil = { copyText: copyText, flash: flash };
 
-  window.homeCopyLink = function (id, btn) {
-    copyText(window.location.origin + window.location.pathname + '#' + id).then(function () {
-      flash(btn, '<i class="fa-solid fa-check" aria-hidden="true"></i>');
-    }).catch(function () {
-      window.prompt('Copy this link:', window.location.origin + window.location.pathname + '#' + id);
-    });
-  };
-
   function centerSharedCard() {
     var id;
     try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (err) { return; }
