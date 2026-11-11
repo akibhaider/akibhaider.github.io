@@ -1,17 +1,19 @@
 # Publications — single source for the Publications page and the Home page.
-# Newest first. Optional keys: venue, badge (orange status pill, e.g. "Accepted in WACV"), pdf, Paper, arxiv, source (code), bibtex, presentation (Google Drive video), poster.
+# Newest first. Optional keys: venue, badge, pdf, supplementary, Paper, arxiv, source, bibtex, presentation, poster.
 - id: pub1
   title: 'PTPC: Prototype-Based Test-Time Prediction Calibration for Few-Shot Object Detection'
   authors: Md Tanvir Hossain Saikat, Md Hasanul Kabir, Md Akib Haider
   img: /images/ptpc_wacv.png
   pdf: /files/PTPC.pdf
+  supplementary: /files/ptpc%20supple.pdf
   badge: Accepted in WACV
 
 - id: pub2
-  title: 'Diagnosing Prototype Estimation in Frozen-Feature Few-Shot Class-Incremental Learning: Training-Free Geometry Selection and Unlabeled-Query Prototype Rectification'
+  title: 'Diagnosing Prototype Estimation in Few-Shot Class-Incremental Learning: Training-Free Geometry Selection and Unlabeled-Query Prototype Rectification'
   authors: Md Tanvir Hossain Saikat, Md Akib Haider, Md Tahmid Islam Tomal, Md Hasanul Kabir
   img: /images/tqpr_wacv.png
   arxiv: https://arxiv.org/pdf/2611.00022
+  supplementary: /files/shrinksel%20supple.pdf
   badge: Accepted in WACV
 
 - id: pub3
@@ -58,8 +60,14 @@
     }
   presentation: https://drive.google.com/file/d/11b-wPbunSQw7JsNYQGRQ52nk94_LEtRV/view?usp=sharing
 
+- id: pub5
+  title: 'Semi-Supervised Ultra-Low-Field to High-Field MRI Translation via Spectral Anchoring'
+  authors: Md Akib Haider, Nafis Fuad Shahid, Sanjay Kalra, Rafsanjany Kushol
+  venue: Under Review, ISBI
+  pdf: /files/isbi%20sub.pdf
 
-# - id: pub5
+
+# - id: pub6
 #   title: 'DPPC: Discriminative Pairwise Predictive Correction with Comparative Prompts for Training-Free Few-Shot Class-Incremental Learning'
 #   authors: Md Tanvir Hossain Saikat, Md Akib Haider*, Md Tahmid Islam Tomal*, Md Hasanul Kabir
 #   img: /images/dppc_wacv.png

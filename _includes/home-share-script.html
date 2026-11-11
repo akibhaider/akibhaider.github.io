@@ -2,10 +2,14 @@
 (function () {
   var copyText = function (text) {
     if (navigator.clipboard && window.isSecureContext) { return navigator.clipboard.writeText(text); }
-    return new Promise(function (resolve) {
+    return new Promise(function (resolve, reject) {
       var ta = document.createElement('textarea');
       ta.value = text; document.body.appendChild(ta); ta.select();
-      document.execCommand('copy'); document.body.removeChild(ta); resolve();
+      try {
+        if (!document.execCommand('copy')) { throw new Error('Copy failed'); }
+        resolve();
+      } catch (err) { reject(err); }
+      finally { document.body.removeChild(ta); }
     });
   };
 
@@ -21,7 +25,21 @@
   window.homeCopyLink = function (id, btn) {
     copyText(window.location.origin + window.location.pathname + '#' + id).then(function () {
       flash(btn, '<i class="fa-solid fa-check" aria-hidden="true"></i>');
+    }).catch(function () {
+      window.prompt('Copy this link:', window.location.origin + window.location.pathname + '#' + id);
     });
   };
+
+  function centerSharedCard() {
+    var id;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (err) { return; }
+    var card = document.getElementById(id);
+    if (card && card.classList.contains('home-pub')) {
+      card.scrollIntoView({ block: 'center', inline: 'nearest' });
+    }
+  }
+
+  window.addEventListener('load', centerSharedCard);
+  window.addEventListener('hashchange', centerSharedCard);
 })();
 </script>

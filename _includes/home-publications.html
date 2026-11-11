@@ -28,6 +28,9 @@
             {% if pub.arxiv %}
               <a class="pub-pill pub-pill--arxiv" href="{{ pub.arxiv }}" target="_blank" rel="noopener noreferrer" title="Open on arXiv"><i class="ai ai-arxiv" aria-hidden="true"></i>arXiv</a>
             {% endif %}
+            {% if pub.supplementary %}
+              <a class="pub-pill pub-pill--pdf" href="{{ pub.supplementary | relative_url }}" target="_blank" rel="noopener noreferrer" title="View supplementary material"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>suppl.</a>
+            {% endif %}
             {% if pub.source %}
               <a class="pub-pill pub-pill--code" href="{{ pub.source }}" target="_blank" rel="noopener noreferrer" title="View source code"><i class="fa-brands fa-github" aria-hidden="true"></i>Code</a>
             {% endif %}
