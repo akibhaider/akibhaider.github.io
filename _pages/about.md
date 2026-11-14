@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 <p>
-  I have recently completed my undergraduate degree in Computer Science at the Islamic University of Technology (IUT), advised by <a href="https://scholar.google.com/citations?user=LIl1Y-0AAAAJ&hl=en">Dr. Md. Hasanul Kabir</a>, where I worked on <strong>Class Incremental Learning in Computer Vision</strong> and <strong>Training-Free Few-Shot Object Detection</strong>, and <a href="https://apps.ualberta.ca/directory/person/kushol">Dr. Rafsanjany Kushol</a>, where I worked on <strong>Ultra-Low Field to High Field MRI Image Translation</strong>. I am currently working as a research intern at the University of Illinois Urbana-Champaign (UIUC) under the supervision of <a href="https://www.sharifasultana.com/">Sharifa Sultana</a>. Our work focuses on building human-centric, trustworthy multimodal language models.
+  I have recently completed my undergraduate degree in Computer Science at the Islamic University of Technology (IUT), advised by <a href="https://scholar.google.com/citations?user=LIl1Y-0AAAAJ&hl=en">Dr. Md. Hasanul Kabir</a>, where I worked on <strong>Class Incremental Learning</strong> and <strong>Few-Shot Object Detection</strong> in Computer Vision, and <a href="https://apps.ualberta.ca/directory/person/kushol">Dr. Rafsanjany Kushol</a>, where I worked on <strong>Ultra-Low Field to High Field MRI Image Translation</strong>. I am currently working as a research intern at the University of Illinois Urbana-Champaign (UIUC) under the supervision of <a href="https://www.sharifasultana.com/">Sharifa Sultana</a>. Our work focuses on building human-centric, trustworthy multimodal language models.
 </p>
 
 <p>
